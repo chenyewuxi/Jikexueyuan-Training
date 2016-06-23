@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="极客学院任务01" />
+    <meta name="description" content="极客学院任务02-BaiduSearch" />
+    <meta content="width=device-width,initial-scale=1.0,maxinum-scale=1.0,user-scalable=0;" name="viewport" />
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/site.css" />
+    <script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+
+        jQuery("#divShowConfig").hover(function() {
+            jQuery("#divConfig").show();
+
+        }, function() {
+            jQuery("#divConfig").hide();
+        });
+
+
+    });
+    </script>
+</head>
+
+<body>
+    <!--     <head></head>
+    <article></article>
+    <section></section>
+    <footer></footer> -->
+    <form id="Form1" method="get" class="form">
+        <nav id="divSearch" class="linkRightNav">
+            <a href="http://www.nuomi.com/?cid=002540" target="_blank" class="fontBold">糯米</a>
+            <a href="http://news.baidu.com" target="_blank" class="fontBold">新闻</a>
+            <a href="http://www.hao123.com/" target="_blank" class="fontBold">hao123</a>
+            <a href="http://map.baidu.com" target="_blank" class="fontBold">地图</a>
+            <a href="http://v.baidu.com" target="_blank" class="fontBold">视频</a>
+            <a href="http://tieba.baidu.com" target="_blank" class="fontBold">贴吧</a>
+            <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http://www.baidu.com/" target="_blank" class="fontNormal">登陆</a>
+            <a id="divShowConfig" class="fontNormal" class="pf">设置</a>
+            <span class="moreProduct">更多产品</span>
+        </nav>
+        
+        <header id="divInmage" class="container80 divCenter">
+            <img src="images/bd_logo1.png" width="270" height="129" />
+        </header>
+        <div id="divSearchContent" class="width600 contentCenter">
+            <span class="search500"><input id="txtSearch" type="text" autofocus="true" autocomplete="false" class="search500" value=""/></span>
+            <span class="searchBar"><input id="btnSearch" type="submit" value="百度一下" class="searchBar"/></span>
+        </div>
+        <div id="ftCon">
+            <div class="ftCon-Wrapper">
+                <div id="qrcode">
+                    <div class="qrcode-item qrcode-item-1">
+                        <div class="qrcode-img "></div>
+                        <div class="qrcode-text">
+                            <p><b>手机百度</b></p>
+                            <p><span>快人一步</span></p>
+                        </div>
+                    </div>
+                    <div class="qrcode-item qrcode-item-2">
+                        <div class="qrcode-img"></div>
+                        <div class="qrcode-text">
+                            <p><b>百度糯米</b></p>
+                            <p><span>一元大餐</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="ftConw">
+                    <p id="lh">
+                        <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                        <a href="http://home.baidu.com">关于百度</a>
+                        <a href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a>
+                    </p>
+                    <p id="cp">
+                        <span>©2016&nbsp;Baidu</span>
+                        <a href="http://www.baidu.com/duty">使用百度前必读</a>
+                        <a href="http://jianyi.baidu.com/duty">意见反馈</a> 京ICP证030173号<i class="c-icon-icrlogo"></i></p>
+                </div>
+                <!--  <div class="divfloat textLeft">
+                    <p>
+                        <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                        <a href="http://home.baidu.com">关于百度</a>
+                        <a href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a>
+                    </p>
+                    <p>
+                        ©2016&nbsp;Baidu&nbsp;
+                        <a href="http://www.baidu.com/duty">使用百度前必读</a>
+                        <a href="http://jianyi.baidu.com/duty">意见反馈</a> &nbsp;京ICP证030173号&nbsp;
+                    </p>
+                </div> -->
+            </div>
+        </div>
+        <div id="divConfig" class="bdpfmenu" style="display: none;">
+            <div class="bdnuarrow"><em></em><i></i></div><a class="setpref" href="javascript:;">搜索设置</a><a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a><a href="javascript:;">关闭预测</a><a href="javascript:;">搜索历史</a>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+section {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+}
+
+.firstHB {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: orange;
+    -webkit-box-flex: 1;
+    -webkit-box-ordinal-group: 3;
+}
+
+.secondHB {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: aqua;
+    -webkit-box-flex: 2;
+    -webkit-box-ordinal-group: 2;
+}
+
+.thirdHB {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background-color: #E3FF7F;
+    -webkit-box-flex: 1;
+    -webkit-box-ordinal-group: 1;
+}
+
+.containerHB {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    width: 600px;
+    background-color: green;
+    margin: 0 auto;
+}
+
+.firstVB {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: orange;
+    -webkit-box-flex: 1;
+    -webkit-box-ordinal-group: 3;
+}
+
+.secondVB {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: aqua;
+    -webkit-box-flex: 2;
+    -webkit-box-ordinal-group: 2;
+}
+
+.thirdVB {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background-color: #E3FF7F;
+    -webkit-box-flex: 1;
+    -webkit-box-ordinal-group: 1;
+}
+
+.containerVB {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 600px;
+    background-color: green;
+    margin: 0 auto;
+}
+
+.firstHF {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: orange;
+    -webkit-flex: 1;
+    -webkit-order: 3;
+}
+
+.secondHF {
+	line-height: 50px;
+    text-align: center;
+    background-color: aqua;
+    -webkit-flex: 2;
+    -webkit-order: 2;
+}
+
+.thirdHF {
+	line-height: 50px;
+    text-align: center;
+    background-color: #E3FF7F;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+}
+
+.containerHF {
+    display: -webkit-flex;
+    -webkit-flex-direction: horizontal;
+    width: 600px;
+    text-align: center;
+    background-color: green;
+    margin: 0 auto;
+}
+
+.firstVF {
+    line-height: 100px;
+    text-align: center;
+    background-color: orange;
+    -webkit-flex: 1;
+    -webkit-order: 3;
+}
+
+.secondVF {
+    line-height: 200px;
+    text-align: center;
+    background-color: aqua;
+    -webkit-flex: 2;
+    -webkit-order: 2;
+}
+
+.thirdVF {
+    line-height: 100px;
+    text-align: center;
+    background-color: #E3FF7F;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+}
+
+.containerVF {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    width: 600px;
+    height: 400px;
+    background-color: green;
+    text-align: center;
+    margin: 0 auto;
+}

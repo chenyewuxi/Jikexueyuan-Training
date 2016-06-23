@@ -1,0 +1,4 @@
+*{margin:0;padding:0}div{margin:5px;width:100px;height:100px;display:moz-box;display:-webkit-box;display:box;position:absolute;left:50%;top:50%}.orange{background-color:#ffa500;margin:-50px 0 0 -50px;box-shadow:0 0 5px 5px rgba(255,165,0,0.6)}
+.aqua{background-color:aqua;margin:-50px 0 0 -50px;box-shadow:0 0 5px 5px rgba(0,255,255,0.6)}.green{background-color:#33e371;margin:-50px 0 0 -50px;box-shadow:0 0 5px 5px rgba(0,255,255,0.6)}
+.blue{background-color:#2196f3}.voilet{background-color:#d833e3}.center{-webkit-box-pack:center;-moz-box-pack:center;-ms-box-pack:center;-webkit-box-align:center;-moz-box-align:center;-ms-box-align:center;-webkit-box-orient:horizontal;-moz-box-orient:horizontal;-ms-box-orient:horizontal}
+.rel
