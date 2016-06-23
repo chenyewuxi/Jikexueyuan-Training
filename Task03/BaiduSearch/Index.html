@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="极客学院任务03" />
+    <meta name="description" content="极客学院任务03-BaiduSearch" />
+    <meta content="width=device-width,initial-scale=1.0,maxinum-scale=1.0,user-scalable=0;" name="viewport" />
+    <title>百度一下，你就知道</title>
+    <!--[if IE 6]>
+     <script type="text/javascript" src="scripts/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="styles/Index.css" />
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="scripts/bootstrap.min.js" />
+    <style type="text/css">
+    body {
+        behavior: url(styles/csshover.htc);
+    }
+    </style>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+
+
+        <!--Show Configuration submenu-->
+        jQuery("#divShowConfig").hover(function() {
+            jQuery("#divConfig").show();
+        }, function() {
+            jQuery("#divConfig").hide();
+        });
+
+
+        jQuery("#divConfig").mouseover(function(event) {
+            jQuery("#divConfig").show();
+        });
+
+        jQuery("#divConfig").mouseout(function(event) {
+            jQuery("#divConfig").hide();
+        });
+
+
+        <!--Show more product submenu-->
+
+        jQuery("#spnShowProduct").hover(function() {
+            jQuery("#divMoreProduct").show();
+
+        });
+
+        jQuery("#divMoreProduct").mouseover(function(event) {
+            jQuery("#divMoreProduct").show();
+        });
+
+        jQuery("#divMoreProduct").mouseout(function(event) {
+            jQuery("#divMoreProduct").hide();
+        });
+
+
+    });
+    </script>
+</head>
+
+<body>
+    <form id="Form1" method="get" class="form">
+        <nav id="divSearch" class="linkRightNav">
+            <a href="http://www.nuomi.com/?cid=002540" target="_blank" class="fontBold">糯米</a>
+            <a href="http://news.baidu.com" target="_blank" class="fontBold">新闻</a>
+            <a href="http://www.hao123.com/" target="_blank" class="fontBold">hao123</a>
+            <a href="http://map.baidu.com" target="_blank" class="fontBold">地图</a>
+            <a href="http://v.baidu.com" target="_blank" class="fontBold">视频</a>
+            <a href="http://tieba.baidu.com" target="_blank" class="fontBold">贴吧</a>
+            <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http://www.baidu.com/" target="_blank" class="fontNormal">登陆</a>
+            <a id="divShowConfig" href="http://www.baidu.com/gaoji/preferences.html" name="tj_settingicon">设置</a>
+            <span id="spnShowProduct" class="moreProduct">更多产品</span>
+        </nav>
+        <article>
+            <header id="divInmage" class="container80 divCenter">
+                <img src="images/bd_logo1.png" width="270" height="129" />
+            </header>
+            <div id="divSearchContent" class="width600 contentCenter">
+                <span><input id="txtSearch"  type="text" autofocus="true" autocomplete="false" class="search500" value=""/></span>
+                <span><input id="btnSearch" type="submit" value="百度一下" class="searchBar"/></span>
+            </div>
+        </article>
+        <div id="divConfig" class="bdpfmenu" style="display: none">
+            <div class="bdnuarrow"><em></em><i></i></div>
+            <a class="setpref" href="javascript:;">搜索设置</a>
+            <a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a>
+            <a href="javascript:;">关闭预测</a>
+            <a href="javascript:;">搜索历史</a>
+        </div>
+        <div id="divMoreProduct" class="bdbri bdbriimg" style="opacity: 1; min-height: 600px; display: none;">
+            <div class="bdmainlink">
+                <div class="bdbriimgtitle">更多产品</div>
+                <div class="briscrollwrapperContainer">
+                    <div class="briscrollwrapper bdbriscroll-ctrl-content bdbriscroll-onwheel" style="height: 446px;">
+                        <div class="bdbriwrapper">
+                            <a href="http://music.baidu.com" name="tj_mp3"><span class="bdbriimgitem_3"></span>音乐</a>
+                            <a href="http://image.baidu.com" name="tj_img"><span class="bdbriimgitem_4"></span>图片</a>
+                            <a href="http://zhidao.baidu.com" name="tj_zhidao"><span class="bdbriimgitem_2"></span>知道</a>
+                            <a href="http://wenku.baidu.com" name="tj_wenku"><span class="bdbriimgitem_5"></span>文库</a>
+                            <a href="http://top.baidu.com" name="tj_bang"><span class="bdbriimgitem_6"></span>风云榜</a>
+                            <a href="http://e.baidu.com/?refer=888" name="tj_tuiguang"><span class="bdbriimgitem_7"></span>百度推广</a>
+                            <div class="bdbrievenmore"><a href="//www.baidu.com/more/" name="tj_more">全部产品&gt;&gt;</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="ftCon" class="ftContainer">
+                <div class="ftCon-Wrapper">
+                    <div id="qrcode" class="qrCodeContainer">
+                        <div class="qrcode-item qrcode-item-1">
+                            <div class="qrcode-img "></div>
+                            <div class="qrcode-text">
+                                <p><b>手机百度</b></p>
+                                <p><span>快人一步</span></p>
+                            </div>
+                        </div>
+                        <div class="qrcode-item qrcode-item-2">
+                            <div class="qrcode-img"></div>
+                            <div class="qrcode-text">
+                                <p><b>百度糯米</b></p>
+                                <p><span>一元大餐</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ftConw">
+                        <p id="lh">
+                            <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                            <a href="http://home.baidu.com">关于百度</a>
+                            <a href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a>
+                        </p>
+                        <p id="cp">
+                            <span>©2016&nbsp;Baidu</span>
+                            <a href="http://www.baidu.com/duty">使用百度前必读</a>
+                            <a href="http://jianyi.baidu.com/duty">意见反馈</a> 京ICP证030173号<i class="c-icon-icrlogo"></i></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+
+</html>

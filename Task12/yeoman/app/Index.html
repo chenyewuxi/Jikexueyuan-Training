@@ -1,0 +1,928 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="极客学院任务12" />
+    <meta name="description" content="极客学院任务12-BaiduSearch" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>百度一下，你就知道</title>
+    <!--[if IE 6]>
+    <style type="text/css">
+    body {behavior: url("styles/csshover.htc");}
+    </style>
+    <![endif]-->
+    <!--[if lt IE 9]>
+     <script type="text/javascript" src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="styles/iconstyle.css" />
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/Index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style-responsive.css" />
+</head>
+
+<body>
+    <div class="body_wrap">
+        <img id="backgroundimage" class="backgroundsetting" src="" />
+        <div style="width:697px;height:550px;border:#ccc solid 1px;display:none" id="allmap"></div>
+        <!-- skin content -->
+        <div id="skinhead" class="skinheadrow" style="display: none">
+            <div class="skinheadmenu_wrap">
+                <div class="skinheadmenu">
+                    <ul>
+                        <li id="hot" class="active"><a><span>热门</span></a></li>
+                        <li id="game"><a><span>游戏</span></a></li>
+                        <li id="carton"><a><span>卡通</span></a></li>
+                        <li id="women"><a><span>女神降临</span></a></li>
+                        <li id="star"><a><span>明星</span></a></li>
+                        <li id="screen"><a><span>风景</span></a></li>
+                        <li id="simple"><a><span>简约</span></a></li>
+                        <li id="new"><a><span>小清新</span></a></li>
+                        <li id="define"><a><span>自定义</span></a></li>
+                        <li id="latest"><a><span>最近使用</span></a></li>
+                    </ul>
+                    <div class="skinsetting">
+                        <div class="skinheadhide">
+                            <span class="blackcolor">背景透明度</span>
+                        </div>
+                        <div class="skinheadhide">
+                            <a>
+                                <span class="skinopcity"></span>
+                            </a>
+                        </div>
+                        <div id="divclearskin" class="skinheadhide">
+                            <a>
+                                <span class="noskinicon"></span>
+                                <span class="blackcolor">不使用换肤</span>
+                            </a>
+                        </div>
+                        <div id="divhideskin" class="skinheadhide">
+                            <a>
+                                <span class="uparrow"></span>
+                                <span>收起</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skinheaditem_wrap">
+                <div class="skinheaditem">
+                    <div class="submenunav">
+                        <ul id="ulgame" class="containerhide">
+                            <li><a href="#" id="gamemssj" class="cur">魔兽世界</a></li>
+                            <li><a href="#" id="gamelscs">炉石传说</a></li>
+                            <li><a href="#" id="gamefbyx">风暴英雄</a></li>
+                            <li><a href="#" id="gameahphs">暗黑破坏神III</a></li>
+                            <li><a href="#" id="gamexjzb">星际争霸II</a></li>
+                        </ul>
+                        <ul id="ulcarton" class="containerhide">
+                            <li><a href="#" id="cartonlt" class="cur">冷兔</a></li>
+                            <li><a href="#" id="cartonal">阿锂</a></li>
+                            <li><a href="#" id="cartonppb">炮炮兵</a></li>
+                        </ul>
+                        <ul id="ulwomen" class="containerhide">
+                            <li><a href="#" id="womenlxr" class="cur">林心如</a></li>
+                            <li><a href="#" id="womenzs">郑爽</a></li>
+                            <li><a href="#" id="womenqw">戚薇</a></li>
+                            <li><a href="#" id="womently">佟丽娅</a></li>
+                            <li><a href="#" id="womenAngelababy">Angelababy</a></li>
+                            <li><a href="#" id="womenty">唐嫣</a></li>
+                            <li><a href="#" id="womenlbb">李冰冰</a></li>
+                            <li><a href="#" id="womengyy">高圆圆</a></li>
+                            <li><a href="#" id="womensl">孙俪</a></li>
+                            <li><a href="#" id="womenyc">姚晨</a></li>
+                        </ul>
+                        <ul id="ulstar" class="containerhide">
+                            <li><a href="#" id="starym" class="cur">杨幂</a></li>
+                            <li><a href="#" id="starlss">刘诗诗</a></li>
+                            <li><a href="#" id="starhg">胡歌</a></li>
+                            <li><a href="#" id="stardzq">邓紫棋</a></li>
+                            <li><a href="#" id="starzly">赵丽颖</a></li>
+                            <li><a href="#" id="starmty">马天宇</a></li>
+                            <li><a href="#" id="starcx">陈旭</a></li>
+                            <li><a href="#" id="starcwt">陈伟霆</a></li>
+                            <li><a href="#" id="starly">柳岩</a></li>
+                            <li><a href="#" id="starwql">吴奇隆</a></li>
+                        </ul>
+                    </div>
+                    <div class="skinitempart">
+                        <div class="container">
+                            <ul id="ulhot" class="containerdisplay">
+                                <li><img src="images/hot1.jpg" /><span></span></li>
+                                <li><img src="images/hot2.jpg" /><span></span></li>
+                                <li><img src="images/hot3.jpg" /><span></span></li>
+                                <li><img src="images/hot4.jpg" /><span></span></li>
+                                <li><img src="images/hot5.jpg" /><span></span></li>
+                                <li><img src="images/hot6.jpg" /><span></span></li>
+                                <li><img src="images/hot7.jpg" /><span></span></li>
+                                <li><img src="images/hot8.jpg" /><span></span></li>
+                                <li><img src="images/hot9.jpg" /><span></span></li>
+                                <li><img src="images/hot10.jpg" /><span></span></li>
+                                <li><img src="images/hot11.jpg" /><span></span></li>
+                                <li><img src="images/hot12.jpg" /><span></span></li>
+                            </ul>
+                            <!-- Game Seciton -->
+                            <ul id="ulgamemssj" class="containerhide">
+                                <li><img src="images/gamemssj1.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj2.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj3.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj4.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj5.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj6.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj7.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj8.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj9.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj10.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj11.jpg" /><span></span></li>
+                                <li><img src="images/gamemssj12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulgamelscs" class="containerhide">
+                                <li><img src="images/gamelscs1.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs2.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs3.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs4.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs5.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs6.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs7.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs8.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs9.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs10.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs11.jpg" /><span></span></li>
+                                <li><img src="images/gamelscs12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulgamefbyx" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulgameahphs" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>i>
+                            </ul>
+                            <ul id="ulgamexjzb" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <!-- Carton Section -->
+                            <ul id="ulcartonlt" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulcartonal" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulcartonppb" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul> 
+                            <!-- women Section -->
+                            <ul id="ulwomenlxr" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulwomenzs" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulwomenqw" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulwomently" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulwomenAngelababy" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulwomenty" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulwomenlbb" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulwomengyy" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulwomensl" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulwomenyc" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <!-- Star Section -->
+                            <ul id="ulstarym" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulstarlss" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulstarhg" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulstardzq" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulstarzly" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulstarmty" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulstarcx" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulstarcwt" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulstarly" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulstarwql" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <!-- Screen -->
+                            <ul id="ulscreen" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulsimple" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <ul id="ulnew" class="containerhide">
+                                <li><img src="images/noimage1.jpg" /><span></span></li>
+                                <li><img src="images/noimage2.jpg" /><span></span></li>
+                                <li><img src="images/noimage3.jpg" /><span></span></li>
+                                <li><img src="images/noimage4.jpg" /><span></span></li>
+                                <li><img src="images/noimage5.jpg" /><span></span></li>
+                                <li><img src="images/noimage6.jpg" /><span></span></li>
+                                <li><img src="images/noimage7.jpg" /><span></span></li>
+                                <li><img src="images/noimage8.jpg" /><span></span></li>
+                                <li><img src="images/noimage9.jpg" /><span></span></li>
+                                <li><img src="images/noimage10.jpg" /><span></span></li>
+                                <li><img src="images/noimage11.jpg" /><span></span></li>
+                                <li><img src="images/noimage12.jpg" /><span></span></li>
+                            </ul>
+                            <input id="autoskin" type="checkbox" />
+                            <label for="autoskin">开启自动换肤</label>
+                        </div>
+                    </div>
+                    <div class="skinpreviewpart">
+                        <div>
+                            <div class="containerpreview">
+                                <u>
+                                <li><img class="imagepreview" id="imgpreview" src="" style="display: none" ></li>
+                            </u>
+                                <p>背景皮肤效果预览</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="divtopnav" class="topnav">
+            <div class="leftnavpart">
+                <div>
+                    <span id="cityname"></span>
+                    <span id="weathericon" class=""></span>
+                    <span id="weathertemp"></span>
+                    <span id="aqi"></span>
+                    <span id="aqifigure"></span>
+                </div>
+                <span>|</span>
+                <a href="#" target="_blank" class="fontBold">宝箱</a>
+                <a id="divChangeSkin" href="#" class="fontBold">换肤</a>
+                <a href="#" target="_blank" class="fontBold">消息</a>
+            </div>
+            <div class="rightnavpart">
+                <a href="http://www.nuomi.com/?cid=002540" target="_blank" class="fontBold">糯米</a>
+                <a href="http://news.baidu.com" target="_blank" class="fontBold">新闻</a>
+                <a href="http://www.hao123.com/" target="_blank" class="fontBold">hao123</a>
+                <a href="http://map.baidu.com" target="_blank" class="fontBold">地图</a>
+                <a href="http://v.baidu.com" target="_blank" class="fontBold">视频</a>
+                <a href="http://tieba.baidu.com" target="_blank" class="fontBold">贴吧</a>
+                <a id="divShowCenter" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http://www.baidu.com/" target="_blank" class="fontNormal">登陆</a>
+                <a id="divShowConfig" href="http://www.baidu.com/gaoji/preferences.html" name="tj_settingicon">设置</a>
+                <span id="spnShowProduct" class="moreProduct">更多产品</span>
+            </div>
+        </div>
+        <div id="divWeather" class="weatherforecast" style="display:none ">
+            <div class="bdnuarrow"><em></em><i></i></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="divAccount" class="bdpfmenu" style="display: none">
+            <div class="bdnuarrow"><em></em><i></i></div>
+            <a class="setpref" href="http://vip.baidu.com/pcui/show/ucenterindex?vip_frm=super_account">我的VIP</a>
+            <a href="http://i.baidu.com/center" target="_blank">个人中心</a>
+            <a href="http://passport.baidu.com/">帐号设置</a>
+            <a href="javascript:;">意见反馈</a>
+            <a href="javascript:;">退出</a>
+        </div>
+        <div id="divConfig" class="bdpfmenu" style="display: none">
+            <div class="bdnuarrow"><em></em><i></i></div>
+            <a class="setpref" href="javascript:;">搜索设置</a>
+            <a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a>
+            <a href="javascript:;">关闭预测</a>
+            <a href="javascript:;">搜索历史</a>
+        </div>
+        <div id="divMoreProduct" class="bdbri bdbriimg" style="opacity: 1; min-height: 600px; display: none;">
+            <div class="bdmainlink">
+                <div class="bdbriimgtitle">更多产品</div>
+                <div class="briscrollwrapperContainer">
+                    <div class="briscrollwrapper bdbriscroll-ctrl-content bdbriscroll-onwheel" style="height: 446px;">
+                        <div class="bdbriwrapper">
+                            <a href="http://music.baidu.com" name="tj_mp3"><span class="bdbriimgitem_3"></span>音乐</a>
+                            <a href="http://image.baidu.com" name="tj_img"><span class="bdbriimgitem_4"></span>图片</a>
+                            <a href="http://zhidao.baidu.com" name="tj_zhidao"><span class="bdbriimgitem_2"></span>知道</a>
+                            <a href="http://wenku.baidu.com" name="tj_wenku"><span class="bdbriimgitem_5"></span>文库</a>
+                            <a href="http://top.baidu.com" name="tj_bang"><span class="bdbriimgitem_6"></span>风云榜</a>
+                            <a href="http://e.baidu.com/?refer=888" name="tj_tuiguang"><span class="bdbriimgitem_7"></span>百度推广</a>
+                            <div class="bdbrievenmore"><a href="//www.baidu.com/more/" name="tj_more">全部产品&gt;&gt;</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form id="Form1" method="get" class="form">
+            <article>
+                <header id="divInmage" class="container100 divCenter">
+                    <a href="https://www.baidu.com"><img src="images/bd_logo1.png" width="175" height="55" /></a>
+                </header>
+                <div id="divSearchContent" class="width600 contentCenter">
+                    <input id="txtSearch" type="text" autofocus="true" autocomplete="false" class="search500" />
+                    <input id="btnSearch" type="submit" value="百度一下" class="searchBar" />
+                </div>
+              
+            </article>
+        </form>
+        <div class="contentcontainer">
+            <ul id="tabcontent">
+                <li class="tabin">我的关注</li>
+                <li>推荐</li>
+                <li>导航</li>
+                <li>视频</li>
+                <li>购物</li>
+            </ul>
+            <div class="panel panel-default containerdisplay">
+                <div class="panel-heading">
+                    <a><span class="glyphicon glyphicon-triangle-bottom"></span>我的导航</a>
+                    <div class="divRightMenu containerhide">
+                        <a href="#">添加</a>
+                        <a href="#">
+                            <input type="checkbox" id="returnprofit" />返利模式</a>
+                        <a href="#">置顶</a>
+                    </div>
+                </div>
+                <div class="panel-body textCenter fontsize18px containerdisplay">
+                    <span>您还没有关注任何网址，快来<a class="fontsize18px">添加</a>吧！</span>
+                </div>
+                <div class="panel-heading">
+                    <a><span class="glyphicon glyphicon-triangle-bottom"></span><span>我的股票</span></a>
+                    <div class="divRightMenu containerhide">
+                        <a href="#">添加</a>
+                        <a href="#">置顶</a>
+                    </div>
+                </div>
+                <div class="panel-body textCenter fontsize18px containerdisplay">
+                    <span>您还没有关注任何股票，快来<a class="fontsize18px">添加</a>吧！</span>
+                </div>
+            </div>
+            <div class="panel panel-default containerhide">
+                <div class="panel-body">
+                    <div class="width60percent divLeft">
+                        <span class="newsearchfilter">以下信息根据您的兴趣推荐</span>
+                        <div class="newsblock">
+                            <a href="http://finance.qq.com/a/20160426/058997.htm"><h4>银监会官员隐瞒妻子加入美国国籍 被党内撤职</h4></a>
+                            <a href="http://www.qq.com">腾讯财经</a><span>04-26 21:28</span>
+                        </div>
+                        <div class="newsblock">
+                            <a href="http://news.china.com/domestic/945/20160427/22528533.html"><h4>中国船王后人获日本2.3亿赔偿 家族争夺巨款</h4></a>
+                            <a href="http://news.china.com/">中华网</a><span>04-27 06:37</span>
+                        </div>
+                        <div class="newsblock">
+                            <a href="http://sports.ifeng.com/a/20160427/48599329_0.shtml"><h4>世锦赛丁俊晖13-3横扫金左手 提前结束战斗进4强</h4></a>
+                            <a href="http://sports.ifeng.com、">凤凰体育</a><span>04-27 06:31</span>
+                        </div>
+                        <div class="newsblock">
+                            <a href="http://www.sd.xinhuanet.com/news/yule/2016-04/27/c_1118731025.htm"><h4>成龙《宝贝计划》里的宝宝,破金像奖,十年后长这样</h4></a>
+                            <a href="http://www.sd.xinhuanet.com/">新华网</a><span>04-26 21:28</span>
+                        </div>
+                    </div>
+                    <div class="hotspot width40percent divLeft">
+                        <div>
+                            <a href="">实时热点</a>
+                            <div class="divRight"><span class="refresh">换一换</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=嫌上班累宅家昏睡&rsv_idx=2">嫌上班累宅家昏睡</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=杀童嫌犯连环行凶&rsv_idx=2">杀童嫌犯连环行凶</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=伊能静素颜现身&rsv_idx=2">伊能静素颜现身</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=伊能静素颜现身&rsv_idx=2">伊能静素颜现身</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=林志玲认三段恋情&rsv_idx=2">林志玲认三段恋情</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=孙悦确认出演电影&rsv_idx=2">孙悦确认出演电影</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=女孩众筹反逼婚&rsv_idx=2">女孩众筹反逼婚</a></li>
+                            <li><a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=全球俯卧撑最牛人&rsv_idx=2">全球俯卧撑最牛人</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default containerhide">
+                <div class="panel-body">
+                    <div>
+                        <h5>猜你喜欢</h5>
+                    </div>
+                    <div class="row navrow">
+                        <div class="col-sm-2"><a href="http://www.baidu.com"><span class="baiduicon"></span><span>百度</span></a></div>
+                        <div class="col-sm-2"><a href="http://www.sina.com.cn"><span class="sinaicon"></span><span>新浪</span></a></div>
+                        <div class="col-sm-2"><a href="http://www.sohu.com"><span class="sohuicon"></span><span>搜狐</span></a></div>
+                        <div class="col-sm-2"><a href="http://www.qq.com"><span class="qqicon"></span><span>腾讯</span></a></div>
+                        <div class="col-sm-2"><a href="http://www.163.com"><span class="neteasyicon"></span><span>网易</span></a></div>
+                        <div class="col-sm-2"><a href="http://www.youku.com"><span class="youkuicon"></span><span>优酷网</span></a></div>
+                    </div>
+                    <div class="row navrow">
+                        <div class="col-sm-2"><a href="http://www.tmal.com"><span class="tmallicon"></span><span>天猫</span></a></div>
+                        <div class="col-sm-2"><a href="http://www.ifeng.com"><span class="ifengicon"></span><span>凤凰网</span></a></div>
+                        <div class="col-sm-2"><a href="http://www.taobao.com"><span class="taobaoicon"></span><span>淘宝网</span></a></div>
+                        <div class="col-sm-2"><a href="http://game.hao123.com"><span class="gamecoloricon"></span><span>免费游戏</span></a></div>
+                        <div class="col-sm-2"><a href="http://www.4399.com"><span class="my4399icon"></span><span>4399游戏</span></a></div>
+                        <div class="col-sm-2"><a href="http://www.xinhuanet.com"><span class="xinhuaicon"></span><span>新华</span></a></div>
+                    </div>
+                    <div class="row navrow">
+                        <div class="col-sm-2"><a href="http://www.jd.com"><span class="jdicon"></span><span>京东商城</span></a></div>
+                        <div class="col-sm-2"><a href="http://ju.taobao.com"><span class="juicon"></span><span>聚划算</span></a></div>
+                        <div class="col-sm-2"><a href="http://tejia.hao123.com"><span class="haotejiaicon"></span><span>今日特价</span></a></div>
+                        <div class="col-sm-2"><a href="http://v.hao123.com"><span class="haomovieicon"></span><span>hao123影视</span></a></div>
+                        <div class="col-sm-2"><a href="http://www.autohome.com.cn"><span class="autohomeicon"></span><span>汽车之家</span></a></div>
+                        <div class="col-sm-2"><a href="http://caipiap.hao123.com"><span class="haocaipiaoicon"></span><span>彩票开奖</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default containerhide">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="moviestyle col-md-3">
+                            <div class="moviebigimage">
+                                <img src="images/summer.jpg" href>
+                            </div>
+                            <div class="movietitle">
+                                <a href="http://www.iqiyi.com/a_19rrgind0d.html?vfm=2008_aldbd">一又二分之一的夏天</a>
+                            </div>
+                            <div class="moviescore">
+                                <span class="moviestar"><span class="movieactive" style="width:45px"></span></span>
+                                <span>5.3</span>
+                            </div>
+                        </div>
+                        <div class="moviestyle col-md-3">
+                            <div class="moviebigimage">
+                                <img src="images/macuo.jpg">
+                            </div>
+                            <div class="movietitle">
+                                <a href="http://www.iqiyi.com/v_19rrkt424g.html?vfm=2008_aldbd&fc=828fb30b722f3164&fv=p_02_01">澳门风云3</a>
+                            </div>
+                            <div class="moviescore">
+                                <span class="moviestar"><span class="movieactive" style="width:60px"></span></span>
+                                <span>9.3</span>
+                            </div>
+                        </div>
+                        <div class="moviestyle col-md-3">
+                            <div class="moviesmallimage">
+                                <img src="images/img3.jpg">
+                            </div>
+                            <div class="movietitle">
+                                <a href="http://www.iqiyi.com/a_19rrgind0d.html?vfm=2008_aldbd">一又二分之一的夏天</a>
+                            </div>
+                            <div class="moviescore">
+                                <span class="moviestar"><span class="movieactive" style="width:45px"></span></span>
+                                <span>5.3</span>
+                            </div>
+                        </div>
+                        <div class="moviestyle col-md-3">
+                            <div class="moviesmallimage">
+                                <img src="images/image4.jpg">
+                            </div>
+                            <div class="movietitle">
+                                <a href="http://www.iqiyi.com/a_19rrgind0d.html?vfm=2008_aldbd">一又二分之一的夏天</a>
+                            </div>
+                            <div class="moviescore">
+                                <span class="moviestar"><span class="movieactive" style="width:45px"></span></span>
+                                <span>5.3</span>
+                            </div>
+                        </div>
+                        <div class="moviestyle col-md-3">
+                            <div class="moviesmallimage">
+                                <img src="images/image5.jpg">
+                            </div>
+                            <div class="movietitle">
+                                <a href="http://www.iqiyi.com/a_19rrgind0d.html?vfm=2008_aldbd">一又二分之一的夏天</a>
+                            </div>
+                            <div class="moviescore">
+                                <span class="moviestar"><span class="movieactive" style="width:45px"></span></span>
+                                <span>5.3</span>
+                            </div>
+                        </div>
+                        <div class="moviestyle col-md-3">
+                            <div class="moviesmallimage">
+                                <img src="images/image6.jpg">
+                            </div>
+                            <div class="movietitle">
+                                <a href="http://www.iqiyi.com/a_19rrgind0d.html?vfm=2008_aldbd">一又二分之一的夏天</a>
+                            </div>
+                            <div class="moviescore">
+                                <span class="moviestar"><span class="movieactive" style="width:45px"></span></span>
+                                <span>5.3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default containerhide">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="shoppingstyle col-md-3">
+                            <a href="http://vip.baidu.com/p_20784?=&vip_frm=mhd_gouwu_xq">
+                                <div class="shoppingimage">
+                                    <img src="images/buy1.jpg">
+                                </div>
+                                <div class="shoppingtitle">
+                                    <span>南极人平角内裤</span>
+                                    <div>
+                                        <span>百度返利</span>
+                                        <span class="promotion">70%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shoppingstyle col-md-3">
+                            <a href="http://vip.baidu.com/p_29472?=&vip_frm=mhd_gouwu_xq">
+                                <div class="shoppingimage">
+                                    <img src="images/buy2.jpg">
+                                </div>
+                                <div class="shoppingtitle">
+                                    <span>二合一车载充电头</span>
+                                    <div>
+                                        <span>百度返现</span>
+                                        <span class="promotion">60%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shoppingstyle col-md-3">
+                            <a href="http://www.iqiyi.com/a_19rrgind0d.html?vfm=2008_aldbd">
+                                <div class="shoppingimage">
+                                    <img src="images/buy3.jpg">
+                                </div>
+                                <div class="shoppingtitle">
+                                    <span>进口零食促销卖场</span>
+                                    <div>
+                                        <span>历史低价</span>
+                                        <span class="promotion">立减50元</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shoppingstyle col-md-3">
+                            <div class="oneyuanorder">
+                                <a href="http://vip.baidu.com/act/xuyuan?=&vip_frm=mhd_gouwu_wzl">
+                                    <div>
+                                        <p>一元得iPhone SE</p>
+                                        <p>其它超值商品1元可得</p>
+                                    </div>
+                                    去看看
+                                </a>
+                                <hr/>
+                                <a target="_blank" class="fanmall" href="http://vip.baidu.com/mall?vip_frm=mhd_gouwu_sc">
+                                    <p>返利商城</p>
+                                </a>
+                                <ul>
+                                    <li><a href="http://www.jd.com/" target="_blank">京东商城</a></li>
+                                    <li><a href="http://www.nuomi.com/" target="_blank">百度糯米</a></li>
+                                    <li><a href="http://www.yhd.com/" target="_blank">1号店</a></li>
+                                    <li><a href="http://www.dandang.com/" target="_blank">当当网</a></li>
+                                    <li><a href="http://www.mogujie.com/" target="_blank">蘑菇街</a></li>
+                                    <li><a href="http://www.vip.com/" target="_blank">唯品会</a></li>
+                                    <li><a href="http://sh.jumei.com/" target="_blank">聚美优品</a></li>
+                                    <li><a href="https://ju.taobao.com/" target="_blank">聚划算</a></li>
+                                    <li><a href="https://chaoshi.tmall.com/" target="_blank">天猫超市</a></li>
+                                    <li><a href="http://vip.baidu.com/mall?=&vip_frm=mhd_gouwu_sc" target="_blank">更多</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/getscript.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </div>
+</body>
+
+</html>

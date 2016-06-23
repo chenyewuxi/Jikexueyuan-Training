@@ -1,0 +1,244 @@
+ body {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ h1 {
+     text-align: center;
+     color: navy;
+     font-weight: bold;
+ }
+ 
+ div button {
+     margin-left: 20px;
+     margin-right: 20px;
+ }
+ 
+ .centerDiv {
+     width: 300px;
+     height: 550px;
+     text-align: center;
+     vertical-align: middle;
+     border: 1px solid orange;
+     margin: 0 auto;
+     box-sizing: border-box;
+     border-radius:20px;
+     -ms-box-shadow:0px 0px 00px 10px rgba(0,0,0,.6);
+     -webkit-box-shadow:0px 0px 10px 10px rgba(0,0,0,.6);
+     -moz-box-shadow:0px 0px 10px 10px rgba(0,0,0,.6);
+     -o-box-shadow:0px 0px 10px 10px rgba(0,0,0,.6);
+     box-shadow:0px 0px 10px 10px rgba(0,0,0,.6);
+
+ }
+ 
+ #history {
+     width: 100%;
+     height: 40px;
+     font-size: 11px;
+     line-height:15px;
+     text-align: right;
+     overflow:hidden;
+ }
+ 
+ #result {
+     width: 100%;
+     height: 70px;
+     font-size: 30px;
+     line-height:70px;
+     text-align: right;
+     margin:0;
+     padding:0;
+     overflow: hidden;
+ }
+ 
+ .container-fluid div.row {
+     display:flex;
+ }
+
+
+ .container-fluid div.row.resultStyle{
+     display:block;
+
+ }
+ .centerDiv .row div {
+     /* padding-top: 10px;
+     padding-bottom: 10px; */
+     display:inline-block;
+     white-space:nowrap;
+     text-align: center;
+     vertical-align: middle;
+ }
+
+    
+ .centerDiv .row.memoryStyle div {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+    -ms-box-shadow: 0px 0px 3px;
+    -webkit-box-shadow: 0px 0px 3px;
+    -moz-box-shadow: 0px 0px 3px;
+    -o-box-shadow: 0px 0px 3px;
+    box-shadow: 0px 0px 3px;
+    border-radius: 6px;
+    margin: 5px;
+    background: gray;
+    flex:1;
+    height:25px;
+    line-height:25px;
+}
+
+.centerDiv .row.resultStyle div:nth-child(1) {
+    overflow:auto;
+}
+
+.centerDiv .row.resultStyle div:nth-child(2) {
+    overflow:auto;
+    scroll:auto;
+}
+
+  .centerDiv .row.resultStyle div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px;
+    -ms-box-shadow: 0px 0px 5px;
+    -webkit-box-shadow: 0px 0px 5px;
+    -moz-box-shadow: 0px 0px 5px;
+    -o-box-shadow: 0px 0px 5px;
+    border-radius: 6px;
+    background: #F3F3F1;
+    border: 1px solid silver;
+    flex:1;
+}
+
+
+ .centerDiv .row.functionStyle div {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px;
+    -ms-box-shadow: 0px 0px 3px;
+    -webkit-box-shadow: 0px 0px 3px;
+    -moz-box-shadow: 0px 0px 3px;
+    -o-box-shadow: 0px 0px 3px;
+     border-radius: 6px;
+    margin: 5px;
+    background: #BBB5B5;
+    height:25px;
+    line-height:25px;
+}
+
+
+.centerDiv .row.numberStyle div {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+     box-shadow: 0px 0px 3px;
+    -ms-box-shadow: 0px 0px 3px;
+    -webkit-box-shadow: 0px 0px 3px;
+    -moz-box-shadow: 0px 0px 3px;
+    -o-box-shadow: 0px 0px 3px;
+    border-radius: 6px;
+    margin: 5px;
+
+    height:40px;
+    line-height:40px;
+    /* background: #BBB5B5; */
+}
+
+.centerDiv .row .operatorStyle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+     box-shadow: 0px 0px 3px;
+    -ms-box-shadow: 0px 0px 3px;
+    -webkit-box-shadow: 0px 0px 3px;
+    -moz-box-shadow: 0px 0px 3px;
+    -o-box-shadow: 0px 0px 3px;
+    border-radius: 6px;
+    margin: 5px;
+    background: #93C0E6;
+     height:30px;
+    line-height:30px;
+}
+
+
+ .centerDiv .row div a {
+     text-decoration: none;
+     width: 100%;
+ }
+ 
+ .title {
+     font-size: 13px;
+     font-weight: normal;
+     text-align: left;
+     text-indent: 5px;
+     width: 100%;
+ }
+ 
+ .bold {
+     font-weight: bold;
+ }
+ 
+ .numberStyle {
+     font-size: 30px;
+     font-weight: bold;
+ }
+ 
+ .memoryStyle {
+     font-size: 15px;
+     
+ }
+ 
+ .functionStyle {
+     font-size: 15px;
+     /* background: #BBB5B5; */
+     font-style: italic;
+ }
+ 
+ .degreeStyle {
+     font-size: 15px;
+     font-style: italic;
+     font-weight:bold;
+     color:blue;
+ }
+
+ .signStyle {
+     font-size: 20px;
+     background: #A46AE0;
+     text-decoration: underline;
+ }
+ 
+ 
+ .centerDiv div:nth-child(5) div:hover,
+ .centerDiv div:nth-child(6) div:hover,
+ .centerDiv div:nth-child(7) div:hover,
+ .centerDiv div:nth-child(8) div:hover,
+ .centerDiv div:nth-child(9) div:hover,
+ .centerDiv div:nth-child(10) div:hover,
+ .centerDiv div:nth-child(11) div:hover,
+ .centerDiv div:nth-child(12) div:hover {
+     background:lightcoral;
+ }
+
+
+.centerDiv div:nth-child(4) div:hover {
+    
+     
+}

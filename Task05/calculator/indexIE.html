@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div id="box">
+	<input type="button" value="按钮" id="btn"/>
+</div>
+	<script type="text/javascript" src="js/eventUtil.js"></script>
+	<script type="text/javascript">
+		var btn= document.getElementById('btn');
+
+		function showMess() {
+			alert("This is cross browers testing!")
+		}
+
+		var obj = new EventUtil();
+		obj.addHandle(btn,'click',showMess);
+		// obj.removeHandle(btn,'click',showMess);
+		
+	</script>
+</body>
+</html>

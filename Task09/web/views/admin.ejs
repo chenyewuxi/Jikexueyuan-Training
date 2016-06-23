@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/admin.css">
+</head>
+
+<body>
+    <h3>百度新闻后台编辑平台</h3>
+    <div class="formwrap">
+
+        <form id="formsubmit" class="form">
+            <input type="hidden" id="hdfactiontype" name="hdfactiontype" value="" />
+            <input type="hidden" id="hdfcategory" name="hdfcategory" value="" />
+            <input type="hidden" id="hdfnewsid" name="hdfnewsid" value="" />
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <label for="category">新闻分类:</label>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <select id="category" class="selectoption" required="true">
+                        <option value="">请选择</option>
+                        <option value="推荐">推荐</option>
+                        <option value="百家">百家</option>
+                        <option value="本地">本地</option>
+                        <option value="图片">图片</option>
+                    </select>
+                    
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <label for="newstitle">新闻标题:</label>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <input type="text" id="newstitle" name="newstitle" title="新闻标题" class="textbox" required="true" />
+                </div>
+                <div class="col-md-4 col-sm-2 col-xs-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <label for="newsimage">新闻图片:</label>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <input type="text" id="newsimage" name="newsimage" title="新闻图片" class="textbox" required="false" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <label for="newsaddtime">更新时间:</label>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <input type="date" id="newsaddtime" name="newsaddtime" title="更新时间" class="textbox" required="true" />
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4"></div>
+            </div>
+            <div class="newcontent">
+                <div>
+                    <label for="newscontent">新闻内容:</label>
+                </div>
+                <div>
+                    <textarea id="newscontent" name="newscontent" rows="3" title="新闻内容" required="true"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5  col-sm-5 col-xs-5">&nbsp;</div>
+                <div class="col-md-2  col-sm-2 col-xs-2">
+                    <input id="save" type="submit" class="btn btn-primary" value="提交">&nbsp;&nbsp;
+                    <input id="reset" type="reset" class="btn btn-default" value="重置">
+                </div>
+                <div class="col-md-5  col-sm-5 col-xs-5">&nbsp;</div>
+            </div>
+        </form>
+    </div>
+    <div id="newdetails" class="container-fluid newswrap">
+    </div>
+    <script type="text/javascript" src="/javascripts/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/admin.js"></script>
+</body>
+
+</html>

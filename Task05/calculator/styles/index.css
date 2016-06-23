@@ -1,0 +1,98 @@
+ body {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ h1 {
+     text-align: center;
+     color: navy;
+     font-weight: bold;
+ }
+ 
+ div button {
+     margin-left: 20px;
+     margin-right: 20px;
+ }
+ 
+ .centerDiv {
+     width: 300px;
+     height: 520px;
+     text-align: center;
+     vertical-align: middle;
+     border: 1px solid orange;
+     margin: 0 auto;
+ }
+ 
+ #history {
+     width: 100%;
+     height: 15px;
+     font-size: 11px;
+     text-align: right;
+ }
+ 
+ #result {
+     width: 100%;
+     height: 50px;
+     font-size: 35px;
+     text-align: right;
+     margin:0;
+     padding:0;
+     overflow:hidden;
+     scroll:auto;
+ }
+ 
+ .centerDiv .row div {
+     padding-top: 10px;
+     padding-bottom: 10px;
+     text-align: center;
+     vertical-align: middle;
+ }
+ 
+ .centerDiv .row div a {
+     text-decoration: none;
+     width: 100%;
+ }
+ 
+ .title {
+     font-size: 13px;
+     font-weight: normal;
+     text-align: left;
+     text-indent: 5px;
+     width: 100%;
+ }
+ 
+ .bold {
+     font-weight: bold;
+ }
+ 
+ .numberStyle {
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ .memoryStyle {
+     font-size: 15px;
+     background: gray;
+ }
+ 
+ .functionStyle {
+     font-size: 15px;
+     background: #BBB5B5;
+     font-style: italic;
+ }
+ 
+ .signStyle {
+     font-size: 20px;
+     background: #A46AE0;
+     text-decoration: underline;
+ }
+ 
+ .centerDiv div:nth-child(4) div:hover,
+ .centerDiv div:nth-child(5) div:hover,
+ .centerDiv div:nth-child(6) div:hover,
+ .centerDiv div:nth-child(7) div:hover,
+ .centerDiv div:nth-child(8) div:hover,
+ .centerDiv div:nth-child(9) div:hover,
+ .centerDiv div:nth-child(10) div:hover {
+     background:lightcoral;
+ }

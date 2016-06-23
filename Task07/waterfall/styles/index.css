@@ -1,0 +1,533 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+
+	width:100%;
+	min-width:1200px;
+}
+
+.box {
+	position:relative;
+	float:left;
+
+
+}
+
+.container{
+	margin: 0 auto;
+}
+
+.content {
+	padding:10px;
+	/* margin: 5px 5px 5px 5px; */
+	border:1ps solid #ccc;
+	box-shadow: 0 0 5px #ccc; 
+	/* border-radius:5px; */
+}
+
+#search {
+    position: relative;
+    z-index: 35;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+    box-shadow: 0 0 3px rgba(150,150,150,.2);
+    min-width: 1220px;
+    display: inline-block;
+    min-height: 90px;
+    width: 100%;
+    padding-bottom: 8px;
+    padding-left:80px;
+}
+
+.s_tab {
+    position: relative;
+    z-index: 6;
+    margin-left: 194px;
+    padding-top: 12px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.s_tab a {
+    color: #555;
+}
+.s_tab b, .s_tab a {
+    margin-right: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Microsoft YaHei',arial,'Hiragino Sans GB',sans-serif;
+}
+
+
+
+.s_logo {
+    float: left;
+    position: relative;
+    top: 0;
+    margin-left: 40px;
+    margin-right: 16px;
+    width: 137px;
+    height: 46px;
+}
+
+
+.s_logo img {
+    display: block;
+    position: relative;
+    top: -17px;
+    z-index: 9;
+    width: 137px;
+    height: 46px;
+    border: 0;
+}
+
+
+#search .s_nav {
+    position: relative;
+    float: left;
+    z-index: 7;
+}
+
+#search .searchform {
+    padding-right: 0!important;
+    width: 585px;
+}
+
+#search form .s_ipt_wr {
+    display: inline-block;
+    width: 453px;
+    height: 32px;
+    border: 1px solid #b8b8b8;
+    border-right: 0;
+    vertical-align: top;
+    margin-right:-10px;
+}
+
+
+#search form .s_ipt_wr .s_ipt {
+    width: 416px;
+    height: 22px;
+    font: 16px/22px arial;
+    margin: 5px 0 0 7px;
+    outline: 0;
+    background: #fff;
+    border:0;
+}
+
+
+#search form .s_btn_wr {
+    display: inline-block;
+    z-index: 0;
+    width: 98px;
+    height: 32px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+}
+
+
+#search form .s_btn_wr .s_btn {
+    width: 98px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, 宋体, Tahoma, Arial, Helvetica, STHeiti;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    padding: 1px 0px 0px;
+    background: url("http://img0.bdstatic.com/static/searchresult/img/search_btn_0dd8940.png") 0px 0px no-repeat;
+    border: 0px;
+}
+
+
+
+#stcontent {
+    position: absolute;
+    z-index: 7;
+    top: -2px;
+    left: 0;
+    zoom: 1;
+    width: 531px;
+    height: 5px;
+}
+
+
+#sttb {
+    position: absolute;
+    z-index: 1;
+    top: 11px;
+    right: 80px;
+    display: block;
+    overflow: hidden;
+    width: 22px;
+    height: 17px;
+    line-height: 10em;
+    outline: 0;
+    _top: 11px;
+}
+
+
+sttb img {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 16px;
+}
+
+#imgfilter {
+    position: relative;
+    float: left;
+    width: 433px;
+    height: 32px;
+    line-height: 32px;
+}
+
+
+#imgfilter-btn {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 34px;
+    font-size: 12px;
+    line-height: 34px;
+    color: #333;
+}
+
+.filter-open {
+    width: 70px!important;
+}
+
+#imgfilter-btn .imgfilter-text {
+    float: left;
+    height: 14px;
+    margin-top: 10px;
+    line-height: 14px;
+    color: #00c;
+}
+
+#imgfilter-btn .imgfilter-arrow {
+    float: left;
+    width: 13px;
+    height: 13px;
+    margin-top: 10px;
+    margin-left: 3px;
+    background-image: url(http://img0.bdstatic.com/static/searchresult/widget/searchBox/imgFilter/img/filter-status_1697eab.png);
+    background-repeat: no-repeat;
+}
+
+#filter-holder {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 276px;
+    height: 32px;
+    margin-left: 8px;
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+
+#filter-holder .holder-arrow {
+    position: absolute;
+    top: 7px;
+    left: -17px;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent #ebebeb transparent transparent;
+}
+
+
+#top-filter-hoder {
+    float: left;
+}
+
+
+#imgfilter #filter-container {
+    width: 276px;
+    height: 32px;
+}
+
+
+.filter {
+    display: inline-block;
+    position: relative;
+    z-index: 99;
+    text-align: left;
+}
+
+
+.filter .subFilter {
+    position: relative;
+    float: right;
+}
+
+.colorBox {
+    width: 90px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+.filter-on .filter-menu-item {
+    font-weight: 400;
+}
+
+
+.filter .subFilter ul {
+    list-style: none;
+    font-size: 12px;
+    color: #2b66b4;
+}
+
+
+.filter-menu-item {
+    position: relative;
+    height: 32px;
+    width: 80px;
+    padding-right: 12px;
+    line-height: 32px;
+    color: #666;
+    cursor: pointer;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 12px;
+    background: url(http://img0.bdstatic.com/static/searchresult/img/lazy_img_d398a71.png) 67px -107px no-repeat;
+    margin-left: 0;
+}
+
+
+.colorFilter .filter-item-con {
+    overflow: hidden;
+}
+
+
+.filter .subFilter ul {
+    list-style: none;
+    font-size: 12px;
+    color: #2b66b4;
+}
+
+
+.filter .subFilter ul .list-first-item {
+    border-color: #fff;
+}
+
+
+.sizeFilter .sub-item-container {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    top: 0;
+    left: 87px;
+    border: 1px solid #dedede;
+    width: 125px;
+}
+
+
+.sizeFilter .info {
+    font-weight: 400;
+    line-height: 25px;
+    text-indent: 0;
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+.sizeFilter .default {
+    color: #999;
+}
+
+.sizeFilter #sizeSubmit {
+    line-height: 16px;
+    padding: 0;
+    border: 0 none;
+    height: 23px;
+    width: 40px;
+    margin-bottom: 13px;
+    margin-top: 8px;
+    cursor: pointer;
+    background: #00c;
+    color: #fff;
+    text-indent: 0;
+}
+
+
+
+
+
+#filter-container .filter-hover {
+    color: #333;
+    background: #ebebeb;
+}
+
+.filter-hover .filter-item-con, .filter-hover .menu-con-arrow {
+    display: block;
+}
+
+
+.sizeFilter input {
+    width: 35px;
+    height: 12px;
+    line-height: 12px;
+    border: 1px solid #ebebeb;
+    padding-left: 2px;
+    color: #666;
+    margin-left: 2px;
+}
+
+
+.colorBox {
+    width: 90px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+.filter-item-con {
+    z-index: 100;
+    position: absolute;
+    display: none;
+    top: 32px;
+    left: 0;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    width: 90px;
+    box-shadow: none;
+}
+
+
+
+
+.colorBox div {
+    float: left;
+    margin: 0 0 6px 6px;
+    display: inline;
+}
+
+.colorBox div a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    border: 0;
+}
+
+
+
+.filter-menu-item {
+    position: relative;
+    height: 32px;
+    width: 80px;
+    padding-right: 12px;
+    line-height: 32px;
+    color: #666;
+    cursor: pointer;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 12px;
+    background: url(http://img0.bdstatic.com/static/searchresult/img/lazy_img_d398a71.png) 67px -107px no-repeat;
+    margin-left: 0;
+}
+
+
+.filter .subFilter ul .selected {
+    color: #00c;
+    cursor: default;
+    border-left: 3px solid #00c;
+}
+
+
+
+.filter .subFilter ul li {
+    position: relative;
+    text-align: left;
+    text-indent: 7px;
+    height: 16px;
+    line-height: 16px;
+    border: 0;
+    border-left: 3px solid #fff;
+    cursor: pointer;
+    color: #666;
+    zoom: 1;
+    margin: 10px 0;
+    padding: 0;
+    background: 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#topInfoBar {
+    clear: both;
+    height: 26px;
+    line-height: 26px;
+    z-index: 0;
+    background: #fff;
+    padding: 5px;
+    display: block;
+    overflow: hidden;
+}
+
+#topInfoBar #topRS {
+    padding-left: 35px;
+    height: 23px;
+    overflow: hidden;
+    _display: inline;
+}
+
+#topInfoBar #topRS .pull-rs-title {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 10px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+    _padding-bottom: 5px;
+    background: url(http://img0.bdstatic.com/static/searchresult/img/lazy_img_d398a71.png) no-repeat -191px -334px;
+}
+
+#topInfoBar #topRS .pull-rs {
+    margin-right: 25px;
+    display: inline-block;
+    zoom: 1;
+    font-size: 14px;
+    color: #00c;
+    text-decoration: none;
+    padding-bottom: 5px;
+    background-position: right -32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

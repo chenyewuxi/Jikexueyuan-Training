@@ -1,0 +1,210 @@
+@article_width: 700px;
+@article_height: 385px;
+@bg_color: #ffffff;
+@bg_darkcolor: #0C0CB3;
+//函数等strat
+//水平居中
+.auto_center(@margin_tb: 0px) {
+    margin: @margin_tb auto;
+}
+
+//字体设置
+.font_style(@fc: #FFF;
+@fs: 14px) {
+    color: @fc;
+    font-size: @fs;
+    font-family: "microsoft yahei";
+}
+
+//浮动设置
+.float_up(@fu: left) {
+    float: @fu;
+}
+
+//display设置
+.display_set(@d: inline-block) {
+    display: @d;
+}
+
+.boredr_css(@w: 1px, @c: red, @s: solid) {
+    border: @arguments;
+}
+
+.padding_set(@t: 20px;
+@r: 0px;
+@b: 0px;
+@l: 0px) {
+    padding: @arguments;
+}
+
+.margin_set(@t: 0;
+@r: 0px;
+@b: 0px;
+@l: 0px) {
+    margin: @arguments;
+}
+
+//1、朝右三角样式
+.triangle-less(top, @w: 10px, @c: red) {
+    border-color: transparent transparent transparent @c;
+}
+
+//@_ 匹配所有(上右下左)
+.triangle-less(@_, @w: 10px, @c: red) {
+    //传参保存一致，所以@w:50px和@c:#ccc也必须写上
+    width: 0;
+    height: 0;
+    border-width: @w;
+    border-style: solid;
+}
+
+//函数等end
+///////////////////////////////////
+.auto_center(@margin_tb: 0px) {
+    margin: @margin_tb auto;
+}
+
+article {
+    width: @article_width;
+    height: @article_height;
+    .auto_center(50px);
+    .boredr_css(5px, @bg_darkcolor, solid);
+    background-color: @bg_darkcolor;
+}
+
+.module {
+    width: @article_width;
+    height: @article_height;
+}
+
+.module-top {
+    width: @article_width;
+    height: @article_height/3;
+    background-color: @bg_darkcolor;
+    .module-top-left {
+        .float_up();
+        width: @article_width/4;
+        height: @article_height/3;
+        .padding_set(0, 0, 0, 20px);
+        .bus-num {
+            .display_set();
+            .padding_set(0, 0, 0, 0);
+            font-weight: bold;
+            .font_style(#F00, 80px);
+        }
+    }
+    .module-top-middle {
+        width: @article_width/2.7;
+        height: @article_height/3;
+        .p-first {
+            .margin_set();
+            .font_style(#ffffff, 35px);
+        }
+        .float_up();
+        .margin_set(0, 0, 0, 0);
+        .span-first {
+            width: 200px;
+            height: 5px;
+            background-color: red;
+            margin-bottom: 8px;
+        }
+        .curt {
+          font-weight: bold;
+        }
+        .span-last {
+            .triangle-less(top);
+        }
+    }
+    .module-top-right {
+        text-align: left;
+        height: @article_width/4;
+        text-indent: 5px;
+        .margin_set(0, 0, 0, 0);
+        .padding_set(0,0,0,0);
+        .bus-time {
+     
+            .font_style(@bg_color);
+        }
+        p.next {
+            
+            .font_style(red,20px);
+            height: 0.5em;
+        }
+        p.curt {
+            
+            .font_style(white,20px);
+            height: 0.5em;
+        }
+        .p-first {
+            .font_style(@bg_color, 18px);
+            height: 0.5em;
+        }
+        .p-last {
+            .font_style(@bg_color, 18px);
+            height: 0.5em;
+        }
+    }
+}
+
+.module-center {
+    text-align: center;
+    background-color: @bg_color;
+    height: 200px;
+    span {
+        .font_style(#000, 15px);
+        width: 1.6em;
+        .display_set();
+    }
+    .active{
+      .font_style(red, 15px);
+      font-weight: bold;
+    }
+
+    .curt{
+      font-weight: bold;
+    }
+
+    .three {
+        line-height: 4.7em;
+    }
+    .four {
+        line-height: 3.14em;
+    }
+    .five {
+        line-height: 2.36em;
+    }
+    .six {
+        line-height: 1.87em;
+    }
+    .seven {
+        line-height: 1.59em;
+    }
+    .eigth {
+        line-height: 1em;
+    }
+
+}
+
+.module-bottom {
+    text-align: center;
+    font-size: 0;
+    background-color: white;
+
+    p {
+        .font_style(#000, 15px);
+         .margin_set(0, 0, 0, 0);
+        .padding_set(0, 0, 0, 0);
+    }
+    span {
+        .display_set();
+    }
+    .span-first {
+        width: 650px;
+        height: 5px;
+        background-color: red;
+        margin-bottom: 8px;
+    }
+    .span-last {
+        .triangle-less(top);
+    }
+}

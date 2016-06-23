@@ -1,0 +1,153 @@
+Wed 21 Dec 22:45:27|listen *:58031[tcp4] for http success
+Wed 21 Dec 22:45:27|Cann't listen *:58031[tcp4] for http ,errno=22
+Wed 21 Dec 22:45:27|listen *:3311[tcp4] for manage success
+Wed 21 Dec 22:45:27|Cann't listen *:3311[tcp4] for manage ,errno=22
+Wed 21 Dec 22:45:27|Start success [pid=5452].
+Wed 21 Dec 22:47:43|Cann't listen *:58031[tcp4] for http ,errno=22
+Wed 21 Dec 22:47:43|Cann't listen *:58031[tcp4] for http ,errno=22
+Wed 21 Dec 22:47:43|Cann't listen *:3311[tcp4] for manage ,errno=22
+Wed 21 Dec 22:47:43|Cann't listen *:3311[tcp4] for manage ,errno=22
+Wed 21 Dec 22:47:43|No any listen , program start failed
+Wed 21 Dec 22:56:04|listen *:58031[tcp4] for http success
+Wed 21 Dec 22:56:04|Cann't listen *:58031[tcp4] for http ,errno=22
+Wed 21 Dec 22:56:04|listen *:3311[tcp4] for manage success
+Wed 21 Dec 22:56:04|Cann't listen *:3311[tcp4] for manage ,errno=22
+Wed 21 Dec 22:56:04|Start success [pid=4264].
+Wed 21 Dec 23:02:48|listen *:58031[tcp4] for http success
+Wed 21 Dec 23:02:48|Cann't listen *:58031[tcp4] for http ,errno=22
+Wed 21 Dec 23:02:49|listen *:3311[tcp4] for manage success
+Wed 21 Dec 23:02:49|Cann't listen *:3311[tcp4] for manage ,errno=22
+Wed 21 Dec 23:02:49|Start success [pid=5488].
+Wed 21 Dec 23:03:14|listen *:58031[tcp4] for http success
+Wed 21 Dec 23:03:14|Cann't listen *:58031[tcp4] for http ,errno=22
+Wed 21 Dec 23:03:14|listen *:3311[tcp4] for manage success
+Wed 21 Dec 23:03:14|Cann't listen *:3311[tcp4] for manage ,errno=22
+Wed 21 Dec 23:03:14|Start success [pid=3660].
+Wed 21 Dec 23:08:52|listen *:58031[tcp4] for http success
+Wed 21 Dec 23:08:52|Cann't listen *:58031[tcp4] for http ,errno=22
+Wed 21 Dec 23:08:52|listen *:3311[tcp4] for manage success
+Wed 21 Dec 23:08:52|Cann't listen *:3311[tcp4] for manage ,errno=22
+Wed 21 Dec 23:08:52|Start success [pid=5068].
+Wed 21 Dec 23:08:52|now create process ["C:\Documents and Settings\Administrator\桌面\Kangle3\bin\extworker.exe"]
+Thu 22 Dec 10:16:55|listen *:58031[tcp4] for http success
+Thu 22 Dec 10:16:55|Cann't listen *:58031[tcp4] for http ,errno=22
+Thu 22 Dec 10:16:55|listen *:3311[tcp4] for manage success
+Thu 22 Dec 10:16:55|Cann't listen *:3311[tcp4] for manage ,errno=22
+Thu 22 Dec 10:16:55|Start success [pid=6004].
+Thu 22 Dec 10:17:05|listen *:58031[tcp4] for http success
+Thu 22 Dec 10:17:05|Cann't listen *:58031[tcp4] for http ,errno=22
+Thu 22 Dec 10:17:05|listen *:3311[tcp4] for manage success
+Thu 22 Dec 10:17:05|Cann't listen *:3311[tcp4] for manage ,errno=22
+Thu 22 Dec 10:17:05|Start success [pid=3756].
+Thu 22 Dec 10:17:05|now create process ["C:\Documents and Settings\Administrator\桌面\Kangle3\bin\extworker.exe"]
+Thu 22 Dec 10:20:51|listen *:58031[tcp4] for http success
+Thu 22 Dec 10:20:51|Cann't listen *:58031[tcp4] for http ,errno=22
+Thu 22 Dec 10:20:51|listen *:3311[tcp4] for manage success
+Thu 22 Dec 10:20:51|Cann't listen *:3311[tcp4] for manage ,errno=22
+Thu 22 Dec 10:20:51|Start success [pid=1640].
+Thu 22 Dec 10:20:51|now create process ["C:\Documents and Settings\Administrator\桌面\Kangle3\bin\extworker.exe"]
+Thu 22 Dec 12:16:27|listen *:58031[tcp6] for http success
+Thu 22 Dec 12:16:27|listen *:58031[tcp4] for http success
+Thu 22 Dec 12:16:27|listen *:3311[tcp6] for manage success
+Thu 22 Dec 12:16:27|listen *:3311[tcp4] for manage success
+Thu 22 Dec 12:16:27|Start success [pid=2460].
+Thu 22 Dec 12:16:27|now create process ["D:\更新\aspWebServer\bin\extworker.exe"]
+Tue 20 Nov 10:46:09|listen *:58031[tcp4] for http success
+Tue 20 Nov 10:46:09|Cann't listen *:58031[tcp4] for http ,errno=22
+Tue 20 Nov 10:46:09|listen *:3311[tcp4] for manage success
+Tue 20 Nov 10:46:09|Cann't listen *:3311[tcp4] for manage ,errno=22
+Tue 20 Nov 10:46:09|Start success [pid=4980].
+Fri 04 Mar 16:18:06|listen *:58031[tcp6] for http success
+Fri 04 Mar 16:18:06|listen *:58031[tcp4] for http success
+Fri 04 Mar 16:18:06|listen *:3311[tcp6] for manage success
+Fri 04 Mar 16:18:06|listen *:3311[tcp4] for manage success
+Fri 04 Mar 16:18:06|Start success [pid=6172].
+Fri 04 Mar 16:18:07|now create process ["D:\BackUp\Software\WebBrowser\ASPServer\aspWebServer\bin\extworker.exe"]
+Fri 04 Mar 16:26:24|listen *:58031[tcp6] for http success
+Fri 04 Mar 16:26:24|listen *:58031[tcp4] for http success
+Fri 04 Mar 16:26:24|listen *:3311[tcp6] for manage success
+Fri 04 Mar 16:26:24|listen *:3311[tcp4] for manage success
+Fri 04 Mar 16:26:24|Start success [pid=5356].
+Fri 04 Mar 16:32:20|listen *:58031[tcp6] for http success
+Fri 04 Mar 16:32:20|listen *:58031[tcp4] for http success
+Fri 04 Mar 16:32:20|listen *:3311[tcp6] for manage success
+Fri 04 Mar 16:32:20|listen *:3311[tcp4] for manage success
+Fri 04 Mar 16:32:20|Start success [pid=17276].
+Fri 04 Mar 16:32:29|now create process ["D:\Project\JKXY\Tasks\Task03\LayoutTest\bin\extworker.exe"]
+Fri 04 Mar 17:00:25|listen *:58031[tcp6] for http success
+Fri 04 Mar 17:00:25|listen *:58031[tcp4] for http success
+Fri 04 Mar 17:00:25|listen *:3311[tcp6] for manage success
+Fri 04 Mar 17:00:25|listen *:3311[tcp4] for manage success
+Fri 04 Mar 17:00:25|Start success [pid=17856].
+Fri 04 Mar 20:22:08|listen *:58031[tcp6] for http success
+Fri 04 Mar 20:22:08|listen *:58031[tcp4] for http success
+Fri 04 Mar 20:22:08|listen *:3311[tcp6] for manage success
+Fri 04 Mar 20:22:08|listen *:3311[tcp4] for manage success
+Fri 04 Mar 20:22:08|Start success [pid=9724].
+Fri 04 Mar 20:23:28|listen *:58031[tcp6] for http success
+Fri 04 Mar 20:23:28|listen *:58031[tcp4] for http success
+Fri 04 Mar 20:23:28|listen *:3311[tcp6] for manage success
+Fri 04 Mar 20:23:28|listen *:3311[tcp4] for manage success
+Fri 04 Mar 20:23:28|Start success [pid=9684].
+Sat 05 Mar 01:50:06|now create process ["D:\Project\JKXY\Tasks\Task03\LayoutTest\bin/autoupdate.exe" "D:\Project\JKXY\Tasks\Task03\LayoutTest\\" "http://autoupdate.kanglesoft.com/config.php?version=2.7.2&type=free&f=win_x86" "down"]
+Wed 09 Mar 09:30:15|listen *:58031[tcp6] for http success
+Wed 09 Mar 09:30:15|listen *:58031[tcp4] for http success
+Wed 09 Mar 09:30:15|listen *:3311[tcp6] for manage success
+Wed 09 Mar 09:30:15|listen *:3311[tcp4] for manage success
+Wed 09 Mar 09:30:15|Start success [pid=14748].
+Wed 09 Mar 09:46:38|listen *:58031[tcp6] for http success
+Wed 09 Mar 09:46:38|listen *:58031[tcp4] for http success
+Wed 09 Mar 09:46:38|listen *:3311[tcp6] for manage success
+Wed 09 Mar 09:46:38|listen *:3311[tcp4] for manage success
+Wed 09 Mar 09:46:38|Start success [pid=14328].
+Wed 09 Mar 11:09:46|listen *:58031[tcp6] for http success
+Wed 09 Mar 11:09:46|listen *:58031[tcp4] for http success
+Wed 09 Mar 11:09:46|listen *:3311[tcp6] for manage success
+Wed 09 Mar 11:09:46|listen *:3311[tcp4] for manage success
+Wed 09 Mar 11:09:46|Start success [pid=14264].
+Wed 09 Mar 11:25:39|listen *:58031[tcp6] for http success
+Wed 09 Mar 11:25:39|listen *:58031[tcp4] for http success
+Wed 09 Mar 11:25:39|listen *:3311[tcp6] for manage success
+Wed 09 Mar 11:25:39|listen *:3311[tcp4] for manage success
+Wed 09 Mar 11:25:39|Start success [pid=16436].
+Wed 09 Mar 11:32:22|listen *:58031[tcp6] for http success
+Wed 09 Mar 11:32:22|listen *:58031[tcp4] for http success
+Wed 09 Mar 11:32:22|listen *:3311[tcp6] for manage success
+Wed 09 Mar 11:32:22|listen *:3311[tcp4] for manage success
+Wed 09 Mar 11:32:22|Start success [pid=17820].
+Wed 09 Mar 11:58:52|listen *:58031[tcp6] for http success
+Wed 09 Mar 11:58:52|listen *:58031[tcp4] for http success
+Wed 09 Mar 11:58:52|listen *:3311[tcp6] for manage success
+Wed 09 Mar 11:58:52|listen *:3311[tcp4] for manage success
+Wed 09 Mar 11:58:52|Start success [pid=16844].
+Wed 09 Mar 12:38:45|listen *:58031[tcp6] for http success
+Wed 09 Mar 12:38:45|listen *:58031[tcp4] for http success
+Wed 09 Mar 12:38:45|listen *:3311[tcp6] for manage success
+Wed 09 Mar 12:38:45|listen *:3311[tcp4] for manage success
+Wed 09 Mar 12:38:45|Start success [pid=16492].
+Wed 09 Mar 14:46:41|listen *:58031[tcp6] for http success
+Wed 09 Mar 14:46:41|listen *:58031[tcp4] for http success
+Wed 09 Mar 14:46:41|listen *:3311[tcp6] for manage success
+Wed 09 Mar 14:46:41|listen *:3311[tcp4] for manage success
+Wed 09 Mar 14:46:41|Start success [pid=6896].
+Wed 09 Mar 16:43:03|now create process ["D:\Project\JKXY\Tasks\Task03\LayoutTest\bin/autoupdate.exe" "D:\Project\JKXY\Tasks\Task03\LayoutTest\\" "http://autoupdate.kanglesoft.com/config.php?version=2.7.2&type=free&f=win_x86" "down"]
+Thu 10 Mar 02:20:53|listen *:58031[tcp6] for http success
+Thu 10 Mar 02:20:53|listen *:58031[tcp4] for http success
+Thu 10 Mar 02:20:53|listen *:3311[tcp6] for manage success
+Thu 10 Mar 02:20:53|listen *:3311[tcp4] for manage success
+Thu 10 Mar 02:20:53|Start success [pid=12752].
+Tue 15 Mar 00:27:21|listen *:58031[tcp6] for http success
+Tue 15 Mar 00:27:21|listen *:58031[tcp4] for http success
+Tue 15 Mar 00:27:21|listen *:3311[tcp6] for manage success
+Tue 15 Mar 00:27:21|listen *:3311[tcp4] for manage success
+Tue 15 Mar 00:27:21|Start success [pid=12768].
+Thu 07 Apr 23:40:38|listen *:58031[tcp6] for http success
+Thu 07 Apr 23:40:38|listen *:58031[tcp4] for http success
+Thu 07 Apr 23:40:38|listen *:3311[tcp6] for manage success
+Thu 07 Apr 23:40:38|listen *:3311[tcp4] for manage success
+Thu 07 Apr 23:40:38|Start success [pid=67688].
+Thu 07 Apr 23:43:48|listen *:58031[tcp6] for http success
+Thu 07 Apr 23:43:48|listen *:58031[tcp4] for http success
+Thu 07 Apr 23:43:48|listen *:3311[tcp6] for manage success
+Thu 07 Apr 23:43:48|listen *:3311[tcp4] for manage success
+Thu 07 Apr 23:43:48|Start success [pid=33016].

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算学生分数等级</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/iconstyle.css" />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>简易计算器</h1>
+    </div>
+    <div class="container-fluid centerDiv">
+        <div class="row">
+            <div class="col-xs-10">
+                <label class="title">Calculator</label>
+            </div>
+            <div class="col-xs-2"><a onclick="exitPage()"><span class="icon-cross"></span></a></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1"><span class="icon-menu"></span></div>
+            <div class="col-xs-10">
+                <label class="title bold">STANDARD</label>
+            </div>
+        </div>
+        <div class="row resultStyle">
+            <div id="history" class="col-xs-12"></div>
+            <div id="result" class="col-xs-12">0</div>
+        </div>
+        <div class="row degreeStyle">
+            <div id="angleunit" class="col-xs-2">DEG</div>
+        </div>
+        <div class="row memoryStyle">
+            <div id="mc" class="col-xs-2">MC</div>
+            <div id="mr" class="col-xs-2">MR</div>
+            <div id="mplus" class="col-xs-2">M+</div>
+            <div id="mminus" class="col-xs-2">M-</div>
+            <div id="ms" class="col-xs-2">MS</div>
+            <div id="memory" class="col-xs-2">Mem</div>
+        </div>
+        <div class="row functionStyle">
+            <div id="sin" class="col-xs-3">sin</div>
+            <div id="cos" class="col-xs-3">cos</div>
+            <div id="tan" class="col-xs-3">tan</div>
+            <div id="PI" class="col-xs-3">π</div>
+        </div>
+        <div class="row functionStyle">
+            <div id="percent" class="col-xs-3">%</div>
+            <div id="squareroot" class="col-xs-3">√</div>
+            <div id="square" class="col-xs-3">X²</div>
+            <div id="reciprocal" class="col-xs-3">1/X</div>
+        </div>
+        <div class="row functionStyle">
+            <div id="ce" class="col-xs-3">CE</div>
+            <div id="c" class="col-xs-3">C</div>
+            <div id="back" class="col-xs-3">backspace</div>
+            <div id="negative" class="col-xs-3">+/-</div>
+        </div>
+        <div class="row numberStyle">
+            <div id="7" class="col-xs-3">7</div>
+            <div id="8" class="col-xs-3">8</div>
+            <div id="9" class="col-xs-3">9</div>
+            <div id="devide" class="col-xs-3 operatorStyle">÷</div>
+        </div>
+        <div class="row numberStyle">
+            <div id="4" class="col-xs-3">4</div>
+            <div id="5" class="col-xs-3">5</div>
+            <div id="6" class="col-xs-3">6</div>
+            <div id="multiple" class="col-xs-3 operatorStyle">×</div>
+        </div>
+        <div class="row numberStyle">
+            <div id="1" class="col-xs-3">1</div>
+            <div id="2" class="col-xs-3">2</div>
+            <div id="3" class="col-xs-3">3</div>
+            <div id="minus" class="col-xs-3 operatorStyle">-</div>
+        </div>
+        <div class="row numberStyle">
+            <div id="point" class="col-xs-3">.</div>
+            <div id="0" class="col-xs-3">0</div>
+            <div id="equal" class="col-xs-3">=</div>
+            <div id="plus" class="col-xs-3 operatorStyle">+</div>
+        </div>
+    </div>
+</body>
+
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/calculator.js"></script>
+
+</html>

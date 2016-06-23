@@ -1,0 +1,130 @@
+html body {
+    /* width: 1000px; */
+    min-width: 1000px;
+}
+
+.formwrap {
+    min-width: 1000px;
+    position: relative;
+}
+
+.form {
+    /* width: 1000px; */
+    min-width: 1000px;
+}
+
+.newcontent {
+    position: absolute;
+    width: 33.33333333%;
+    top: 7px;
+    right: 0;
+}
+
+select,
+input[type=date] {
+    width:170px;
+    height:30px;
+    border: 1px solid #E4E4E4;
+}
+
+select option {
+    font-size:11px;
+}
+
+
+div.row div {
+    height: 40px;
+    line-height: 40px;
+}
+
+div.row div label {
+    float: right;
+}
+
+div.newcontent div:first-child {
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: right;
+    height: 40px;
+    padding-top: 10px;
+    padding-right: 15px;
+    top: -7px;
+}
+
+div.newcontent div:last-child {
+    width: 50%;
+    float: right;
+    text-align: left;
+    height: 80px;
+}
+
+div.newcontent textarea {
+    height: 62px;
+    border: 1px solid #E4E4E4;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+div.row div input.textbox {
+    border: 1px solid #E4E4E4;
+    height: 30px;
+    line-height: 30px;
+}
+
+div.row:last-child div.defaultbutton input[type=submit],
+div.row:last-child div.defaultbutton input[type=reset] {
+    border: 1px solid #E4E4E4;
+}
+
+#newdetails {
+    margin-top: 15px;
+    border: 1px solid #E4E4E4;
+    min-width: 1000px;
+}
+
+#newdetails div.header,
+#newdetails div.footer {
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-align: center;
+}
+
+#newdetails div.row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#newdetails div.row div {
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    border-left: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+    text-align: center;
+
+    text-overflow: ellipsis;
+}
+
+#newdetails div.row div input[type=checkbox] {
+    position: relative;
+    top: 3px;
+}
+
+
+#newdetails div.row.active {
+
+    background-color: #9C7CD6;
+    color:#fff;
+}
+
+h3 {
+    width:100%;
+    color:#333;
+    text-decoration:underline;
+    font-weight:bold;
+    text-align:center;
+}

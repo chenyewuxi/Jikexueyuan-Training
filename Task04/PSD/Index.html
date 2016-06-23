@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize_3.0.3.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/PSDIndex.css" />
+    <script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+
+
+        jQuery('.carousel').carousel()
+
+        jQuery('.carousel').carousel({
+            interval: 1000
+        })
+
+        jQuery('#divCarousel a').click(function(e) {
+            e.preventDefault()
+            jQuery(this).tab('show')
+        })
+
+
+    });
+    </script>
+</head>
+
+<body>
+    <header class="headerStyle">
+        <!-- Left Empty Space -->
+        <div class="leftEmptyBar">
+        </div>
+        <!-- Log Icon -->
+        <div class="logBar">
+            <a href="#">
+                <img alt="Brand" src="images/ImagesPSD/Log.gif">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav nav-pill nav-static-top">
+                <li role="presentation" class="active"><a href="#">首页</a></li>
+                <li role="presentation"><a href="#">智能家居</a></li>
+                <li role="presentation"><a href="#">案例展示</a></li>
+                <li role="presentation"><a href="#">致创能源</a></li>
+                <li role="presentation"><a href="#">答疑解惑</a></li>
+                <li role="presentation"><a href="#">合作加盟</a></li>
+            </ul>
+        </nav>
+        <!-- Right Empty Space -->
+        <div class="rightEmptyBar">
+        </div>
+        <!--  -->
+    </header>
+    <article class="advertiseBar">
+        <div id="divCarousel" class="carousel slide" data-ride="carousel">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#divCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#divCarousel" data-slide-to="1"></li>
+                <li data-target="#divCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/imagesPSD/smartHome.png" alt="smart home example">
+                    </div>
+                    <div class="item">
+                        <img src="images/imagesPSD/smarthome1.png" alt="smart home manager">
+                    </div>
+                    <div class="item">
+                        <img src="images/imagesPSD/ourfeature.png" alt="our feature">
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#divCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">前一页</span>
+            </a>
+            <a class="carousel-control right" href="#divCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">后一页</span>
+            </a>
+        </div>
+    </article>
+    <article class="contentPart">
+        <section class="sectionTitleConversed">
+            <p>智能家居</p>
+            <p>Smart Home</p>
+            <img src="images/imagesPSD/downArrow.gif">
+            <p>未来五年，智能家庭将形成一个亿万级的市场规模，全球智能设备数量将达近300亿</p>
+            <p>在不远未来，没有智能家居系统的住宅将会像今天不能上网的住宅一样不符合潮流</p>
+        </section>
+        <section class="homeContent">
+            <div class="leftEmptyBar"></div>
+            <div class="homeRow">
+                <div class="homeContentCase">
+                    <img class="homeCase" src="images/imagesPSD/brain.gif">
+                    <p>最强大脑</p>
+                </div>
+                <div class="homeContentCase"> <img class="homeCase" src="images/imagesPSD/eye.gif">
+                    <p>大开眼界</p>
+                </div>
+                <div class="homeContentCase"> <img class="homeCase" src="images/imagesPSD/help.gif">
+                    <p>智能帮手</p>
+                </div>
+                <div class="homeContentCase"> <img class="homeCase" src="images/imagesPSD/guard.gif">
+                    <p>安全卫士</p>
+                </div>
+            </div>
+            <div class="rightEmptyBar"></div>
+        </section>
+    </article>
+    <article class="contentPart casePresentation">
+        <section class="clearTitle">
+            <p>案例展示</p>
+            <p>Case Presentation</p>
+            <img src="images/imagesPSD/downArrowConversed.gif">
+            <p>致力于提供优质的智慧型智能家居平台</p>
+            <p>运用领域广，小区、别墅、高端楼宇等等，让科技之光遍布每一个角落</p>
+        </section>
+        <section class="caseContent">
+            <div class="caseRow">
+                <img class="singleCase" src="images/imagesPSD/case1.png">
+                <img class="singleCase" src="images/imagesPSD/case2.png">
+                <img class="singleCase" src="images/imagesPSD/case3.png">
+                <img class="singleCase" src="images/imagesPSD/case4.png">
+            </div>
+            <div class="caseRow">
+                <img class="singleCase" src="images/imagesPSD/case5.png">
+                <img class="singleCase" src="images/imagesPSD/case6.png">
+                <img class="singleCase" src="images/imagesPSD/case7.png">
+                <img class="singleCase" src="images/imagesPSD/case8.png">
+            </div>
+        </section>
+    </article>
+    <article class="contentPart fcreateEnegry">
+        <section class="sectionTitleConversed">
+            <p>致创能源</p>
+            <p>Fcreate Enerry</p>
+            <img src="images/imagesPSD/downArrow.gif">
+            <p>专“致”能源管理，共“创”智慧生活 </p>
+            <p>一支专致的硬件研发团队、一支创新的软件研发团队、一支积极的市场拓展团队、一支高效的企业管理</p>
+        </section>
+    </article>
+    <article class="contentPart newInformation">
+        <section class="clearTitle">
+            <p>前沿资讯</p>
+            <p>Frontier information</p>
+            <img src="images/imagesPSD/downArrow.gif">
+            <p>体验智能科技，畅享人性家居 </p>
+            <p>第一时间快递科技要文，全方位、多视角畅想智能家居的体验</p>
+        </section>
+        <section class="sectionClearContent">
+            <section class="leftBar">
+            </section>
+            <section class="newInfo">
+                <div class="infoLeftPart">
+                    <div>
+                    </div>
+                    <div>
+                        <h6>互联网时代的智能照明发展趋势</h6>
+                        <p>近期，厦门致创能源技术有限公司总经理洪极慧先生与荷兰代尔夫特理工大学张国旗教授、杭州鸿雁电器有限公司副总裁孙泉</p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <h6>智能照明控制系统 在办公楼中功能和优点</h6>
+                        <p>智能照明控制系统能成功地延长灯具寿命2-4倍</p>
+                    </div>
+                </div>
+                <div class="infoMiddlePart"><img class="newInfoIcon" src="images/imagesPSD/newInfo.png"></div>
+                <div class="infoRightPart">
+                    <div>
+                        <h6>智能家居标准出台 智能家居市场有望突破瓶颈</h6>
+                        <p>而据前瞻研究院发布的《2013-2017年中国智能家居设备行业发展前景预测与投资机会分析报告》显示，到2018年，我国智能家居市场规模将高</p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <h6>我国智能照明系统应用行业所占比例评估</h6>
+                        <p>厦门市致创能源技术有限公司，在今年10月份推出了新的产品线--智能电管家系列。</p>
+                    </div>
+                    <div></div>
+                </div>
+            </section>
+            <section class="rightBar">
+            </section>
+        </section>
+    </article>
+    <article class="contentPart joinCoporation">
+        <section class="sectionTitleConversed">
+            <p>加盟合作</p>
+            <p>Joined Cooperation</p>
+            <img src="images/imagesPSD/downArrow.gif">
+            <p>掌握关键核心技术，代工生产</p>
+            <p>强手联合，合作共赢，共创智能家居新格局</p>
+        </section>
+    </article>
+    <article class="contentPart xiaMenMap">
+        <section class="sectionTitle">
+            <p>联系我们</p>
+            <p>Contact us</p>
+            <img src="images/imagesPSD/downArrow.gif">
+            <p>从一切开始，先说说你的需求吧！</p>
+        </section>
+        <section class="sectionContent">
+            <div class="leftBar"></div>
+            <div class="middleBar">
+                <div class="contactInfo">
+                    <div>
+                        <input id="username" type="textbox" placeholder="姓名" required="" />
+                    </div>
+                    <div>
+                        <input id="usertele" type="textbox" placeholder="联系电话" required="" />
+                    </div>
+                    <div>
+                        <input id="userzip" type="textbox" placeholder="邮编" required="" />
+                    </div>
+                    <div class="requireArea">
+                        <textarea id="userzip" type="text" placeholder="详情需求描述" required=""></textarea>
+                    </div>
+                    <div>
+                        <input id="submit" type="submit" value="提                                    交" required="" />
+                    </div>
+                </div>
+            </div>
+            <div class="contactIconMargin">
+            </div>
+            <div class="contactIcon">
+                <img class="contactImage" src="images/imagesPSD/contactItem.gif">
+            </div>
+            <div class="middleBar">
+                <div class="contactItem">
+                    <div>地址：厦门市思明区软件园二期望海路16号之三 3楼</div>
+                    <div>热线：400-855-0091</div>
+                    <div>电话：86-0592-5955168</div>
+                    <div>传真：86-0592-5146486</div>
+                    <div>邮编：361000</div>
+                    <div>邮箱：sales@f-create.com.cn</div>
+                    <div>网址：http://www.fcreate.com.cn</div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer class="footerStyle">
+        <p>1995-2015 厦门市致创能源技术胡限公司版权所有 闽ICP备120223434号-5</p>
+    </footer>
+</body>
+
+</html>

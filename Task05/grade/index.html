@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算学生分数等级</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align:center;
+        color:navy;
+        font-weight:bold;
+    }
+    
+     div button {
+        margin-left:20px;
+        margin-right:20px;
+    }
+    
+    .centerDiv {
+        width: 100%;
+        height: 100%;
+        min-width: 400px;
+        text-align: center;
+        margin: 200px auto;
+    }
+
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>学习成绩评估网页</h1>
+    </div>
+    
+    <div class="container-fluid centerDiv">
+
+        <button type="button" class="btn btn-primary btn-lg evaluButton" onclick="getStudentGrade()">评估学习成绩</button>
+        <button type="button" class="btn btn-default btn-lg  exitButton" onclick="exitPage()">退出</ button>
+    </div>
+    <script type="text/javascript">
+    function exitPage() {
+        if (confirm("您确定要退出网页吗?")) {
+            window.opener = null;
+            window.open('', '_self');
+            window.close();
+        }
+    }
+
+    function getStudentGrade() {
+
+        var useInput = "";
+        var score = -1;
+        var scoreString = "";
+        var grade = "";
+        var message = "";
+        var flagFail = false;
+
+        do {
+            useInput = prompt("请输入学生成绩，此成绩须为有效数字！");
+            flagFail = true;
+            useInput = $.trim(useInput);
+            score = parseInt(useInput);
+            if (isNaN(score)) {
+                continue;
+            }
+            scoreString = score + "";
+
+            if (scoreString.length != useInput.length) {
+                continue;
+            }
+
+            flagFail = false;
+
+        } while (flagFail)
+
+        switch (true) {
+            case score > 100 || score < 0:
+                grade = "学生成绩有效值区间为0至100，请重新输入！";
+                break;
+            case score > 90 && score <= 100:
+                grade = "A";
+                break;
+            case score > 80 && score <= 90:
+                grade = "B";
+                break;
+            case score > 70 && score <= 80:
+                grade = "C";
+                break;
+            case score > 60 && score <= 70:
+                grade = "D";
+                break;
+            case score >= 0 && score <= 60:
+                grade = "E";
+                break;
+            default:
+                grade = "程序发生未测试的路径，请联系程序员!"
+        }
+
+        switch (grade) {
+            case "A":
+                message = "恭喜！您得到" + grade + "级(1级)。";
+                break;
+            case "B":
+            case "C":
+            case "D":
+                message = "还不错! 您得到" + grade + "级";
+                switch (grade) {
+                    case "B":
+                        message += "(2级)。"
+                        break;
+                    case "C":
+                        message += "(3级)。"
+                        break;
+                    case "D":
+                        message += "(4级)。"
+                        break;
+                }
+                break;
+            case "E":
+                message = "加油!您得到" + grade + "(5级),需要重新学习。"
+                break;
+            default:
+                message = grade;
+                break;
+        }
+
+        alert(message);
+    }
+    </script>
+</body>
+
+</html>

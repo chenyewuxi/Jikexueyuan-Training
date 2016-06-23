@@ -1,0 +1,130 @@
+body,
+p,
+form,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-size: 12px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+ /*    min-width: 800px; */
+    height: 100%;
+ /* min-height: 700px; */
+}
+
+div {
+    display: block;
+}
+
+div p a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #000;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.linkRightNav {
+    width: 100%;
+    min-width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.linkRightNav a {
+    font-size: 13px;
+    text-decoration: underline;
+    color: #000;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+.fontBold {
+    font-weight: bold;
+}
+
+.fontNormal {
+    font-weight: normal;
+}
+
+
+a.fontBold:hover,
+a.fontNormal:hover {
+    color: blue;
+}
+
+
+.container80 {
+    margin-top: 50px;
+    _margin-top: 50px;
+    width: 80%;
+    min-width: 600px;
+}
+
+.noWrap {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+
+.divCenter {
+    margin: 0 auto;
+}
+
+.divLeft {
+    float: left;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+.divRight {
+    float: right;
+}
+
+
+.contentCenter {
+    margin: 40px auto;
+}
+
+.search500 {
+    width: 550px;
+    height: 34px;
+    overflow: hidden;
+    float: left;
+    outline: 0;
+    text-indent: 7px;
+    box-sizing: border-box;
+    *position: relative;
+    *width: 540px;
+    *height: 24px;
+    *border: 1px;
+    *border-style: solid;
+    *border-color: silver;
+    *padding: 7px 0px 0px 7px;
+}
+
+.searchBar {
+    width: 100px;
+    height: 34px;
+    background-color: #3385ff;
+    color: white;
+    float: left;
+    font-size: 16px;
+    border: 1px solid #3385ff;
+    box-sizing: border-box;
+    *border: 0;
+}

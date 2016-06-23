@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {}
+
+body {
+	min-width:800px;
+}
+
+.header {
+    background: orange;
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+}
+
+.article {
+    background: green;
+    height: 400px;
+}
+
+.footer {
+    background: yellow;
+    height: 100px;
+    text-align: center;
+    font-size: 11px;
+    color: #5D5454;
+    background: #E0E0B6;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.article {
+    /* 	padding-left: 150px;
+	padding-right:100px; */
+    overflow: hidden;
+}
+
+.article .left {
+    background: blue;
+    float: left;
+    color: white;
+    width: 150px;
+    /* height: 16px; */
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    overflow: hidden;
+    margin-left: -100%;
+    /*     position:relative;
+    left:-150px; */
+    text-align: center;
+    padding-top:15px;
+    font-size:13px;
+}
+
+.article .right {
+    background: aqua;
+    float: right;
+    width: 100px;
+    /* height: 16px; */
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    overflow: hidden;
+    margin-left: -100%;
+    /*     position:relative;
+    right:-100px; */
+    text-align: center;
+    padding-top:15px;
+    font-size:13px;
+}
+
+.article .middle {
+    background: brown;
+    float: left;
+    width: 100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    overflow: hidden;
+    text-indent: 10px;
+
+}
+
+.inner {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-weight: bold;
+    padding-top:15px;
+    font-size:16px;
+
+}

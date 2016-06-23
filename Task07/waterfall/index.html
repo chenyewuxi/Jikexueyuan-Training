@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>waterfall</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+
+<body>
+    <div id="search">
+        <div class="s_tab">
+            <a href="http://news.baidu.com/" onmousedown="setHeadUrl(this)" name="i_news">新闻</a>
+            <a href="https://www.baidu.com/" onmousedown="setHeadUrl(this)" name="i_webpage">网页</a>
+            <a href="http://tieba.baidu.com/" onmousedown="setHeadUrl(this)" name="i_tieba">贴吧</a>
+            <a href="http://zhidao.baidu.com/" onmousedown="setHeadUrl(this)" name="i_zhidao">知道</a>
+            <a href="http://music.baidu.com/" onmousedown="setHeadUrl(this)" name="i_mp3" class="eng">音乐</a>
+            <b>图片</b>
+            <a href="http://v.baidu.com/" onmousedown="setHeadUrl(this)" name="i_video">视频</a>
+            <a href="http://map.baidu.com/" onmousedown="setHeadUrl(this)" name="i_map">地图</a>
+            <a href="http://baike.baidu.com/" onmousedown="setHeadUrl(this)" name="i_baike">百科</a>
+            <a href="http://wenku.baidu.com/" onmousedown="setHeadUrl(this)" name="i_wenku">文库</a>
+        </div>
+        <a href="/" class="s_logo">
+            <img src="http://img0.bdstatic.com/img/image/imglogo-r.png" style="width:137px; height:46px;" alt="到 百度图片首页 来" title="返回 百度图片首页">
+        </a>
+        <div class="s_nav">
+            <form action="/search/index" class="searchform" name="f1" onsubmit="return s_submit(this,true)">
+                <span class="s_ipt_wr"><input id="kw" name="word" class="s_ipt" value="宠物" autocomplete="off"></span>
+                <span class="s_btn_wr"><input type="submit" class="s_btn" onmousedown="this.className='s_btn s_btn_h'" onmouseout="this.className='s_btn'" value="百度一下"></span>
+            </form>
+        </div>
+        <div id="imgfilter">
+            <a id="imgfilter-btn" class="filter-open" href="javascript:;">
+                <span class="imgfilter-text">图片筛选</span>
+                <span class="imgfilter-arrow"></span>
+            </a>
+            <div id="filter-holder" style="display:none">
+                <span class="holder-arrow"></span>
+                <div id="top-filter-hoder">
+                    <div id="filter-container">
+                        <div class="filter" id="filter">
+                            <div id="typeFilter" class="subFilter filter-on">
+                                <div>
+                                    <div class="filter-menu-item">全部类型</div><span class="menu-con-arrow"></span>
+                                    <ul class="filter-item-con">
+                                        <li val="-1" data-text="全部类型" par="st" isd="1" class="list-first-item selected">全部类型</li>
+                                        <li val="3" data-text="头像图片" par="s" isd="">头像图片</li>
+                                        <li val="1" data-text="面部特写" par="face" isd="">面部特写</li>
+                                        <li val="1" data-text="卡通画" par="st" isd="">卡通画</li>
+                                        <li val="2" data-text="简笔画" par="st" isd="">简笔画</li>
+                                        <li val="6" data-text="动态图片" par="lm" isd="">动态图片</li>
+                                        <li val="7" data-text="静态图片" par="lm" isd="">静态图片</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="colorFilter" class="subFilter colorFilter">
+                                <div>
+                                    <div class="filter-menu-item">全部颜色</div><span class="menu-con-arrow"></span>
+                                    <div class="filter-item-con">
+                                        <ul>
+                                            <li val="0" data-text="全部颜色" class="list-first-item" title="不做颜色筛选" isd="1">全部颜色</li>
+                                        </ul>
+                                        <div class="colorBox">
+                                            <div val="1" data-color="#DE2020" data-text="红色" title="红色" class="colorBlock red" isd="">
+                                                <a href="javascript:void(0);" hidefocus="true" style="background-color:#DE2020;border-color:#CB1C1C"></a>
+                                            </div>
+                                            <div val="256" data-color="#FE6C00" data-text="橙色" title="橙色" class="colorBlock orange" isd="">
+                                                <a href="javascript:void(0);" hidefocus="true" style="background-color:#FE6C00;border-color:#E96300"></a>
+                                            </div>
+                                            <div val="2" data-color="#FEBF00" data-text="黄色" title="黄色" class="colorBlock yellow" isd="">
+                                                <a href="javascript:void(0);" hidefocus="true" style="background-color:#FEBF00;border-color:#E9B000"></a>
+                                            </div>
+                                            <div val="4" data-color="#59A725" data-text="绿色" title="绿色" class="colorBlock green" isd="">
+                                                <a href="javascript:void(0);" hidefocus="true" style="background-color:#59A725;border-color:#539B23"></a>
+                                            </div>
+                                            <div val="32" data-color="#892BCF" data-text="紫色" title="紫色" class="colorBlock purple" isd="">
+                                                <a href="javascript:void(0);" hidefocus="true" style="background-color:#892BCF;border-color:#7A27B7"></a>
+                                            </div>
+                                            <div val="64" data-color="#D744BA" data-text="粉色" title="粉色" class="colorBlock pink" isd="">
+                                                <a href="javascript:void(0);" hidefocus="true" style="background-color:#D744BA;border-color:#C63FAB"></a>
+                                            </div>
+                                            <div val="8" data-color="#06B7C8" data-text="青色" title="青色" class="colorBlock cyan" isd="">
+                                                <a href="javascript:void(0);" hidefocus="true" style="background-color:#06B7C8;border-color:#07A6B7"></a>
+                                            </div>
+                                            <div val="16" data-color="#0065FE" data-text="蓝色" title="蓝色" class="colorBlock blue" isd="">
+                                                <a href="javascript:void(0);" hidefocus="true" style="background-color:#0065FE;border-color:#005CEB"></a>
+                                            </div>
+                                            <div val="128" data-color="#733413" data-text="棕色" title="棕色" class="colorBlock gray" isd="">
+                                                <a href="javascript:void(0);" hidefocus="true" style="background-color:#733413;border-color:#6B3012"></a>
+                                            </div>
+                                            <div val="1024" data-bg="" data-text="白色" title="白色" class="colorBlock white" isd=""><span class="picbox" style="display:block;"><a href="javascript:void(0);" hidefocus="true"></a></span></div>
+                                            <div val="512" data-color="#000" data-text="黑色" title="黑色" class="colorBlock black" isd="">
+                                                <a href="javascript:void(0);" hidefocus="true" style="background-color:#000;border-color:#000"></a>
+                                            </div>
+                                            <div val="2048" data-bg="#fff url(http://img0.bdstatic.com/static/searchresult/img/lazy_img_d398a71.png) no-repeat -1px -319px" data-text="黑白" title="黑白" class="colorBlock bw" isd=""><span class="picbox" style="display:block;"><a href="javascript:void(0);" hidefocus="true"></a></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sizeFilter" class="subFilter sizeFilter">
+                                <div>
+                                    <div class="filter-menu-item">全部尺寸</div><span class="menu-con-arrow"></span>
+                                    <ul class="filter-item-con">
+                                        <li val="0" data-text="全部尺寸" par="z" isd="1" class="list-first-item selected">全部尺寸</li>
+                                        <li val="9" data-text="特大尺寸" par="z" isd="">特大尺寸</li>
+                                        <li val="3" data-text="大尺寸" par="z" isd="">大尺寸</li>
+                                        <li val="2" data-text="中尺寸" par="z" isd="">中尺寸</li>
+                                        <li val="1" data-text="小尺寸" par="z" isd="">小尺寸</li>
+                                        <li val="null" data-text="电脑壁纸" style="text-decoration: none;" par="s" isd="" class="sub-item-parent wp-pc">电脑壁纸
+                                            <ul class="sub-item-container">
+                                                <li data-text="1920x1080" class="wp-item" w="1920" h="1080" par="s">1920x1080</li>
+                                                <li data-text="1680x1050" class="wp-item" w="1680" h="1050" par="s">1680x1050</li>
+                                                <li data-text="1440x900" class="wp-item" w="1440" h="900" par="s">1440x900</li>
+                                                <li data-text="1366x768" class="wp-item" w="1366" h="768" par="s">1366x768</li>
+                                                <li data-text="1280x1024" class="wp-item" w="1280" h="1024" par="s">1280x1024</li>
+                                                <li data-text="1280x800" class="wp-item" w="1280" h="800" par="s">1280x800</li>
+                                                <li data-text="1024x768" class="wp-item" w="1024" h="768" par="s">1024x768</li>
+                                            </ul>
+                                        </li>
+                                        <li val="null" data-text="手机壁纸" style="text-decoration: none;" par="s" isd="" class="sub-item-parent wp-wise">手机壁纸
+                                            <ul class="sub-item-container">
+                                                <li data-text="2560x1440" class="wp-item" w="1440" h="2560" par="s">2560x1440</li>
+                                                <li data-text="1920x1080" class="wp-item" w="1080" h="1920" par="s">1920x1080</li>
+                                                <li data-text="1334x750" class="wp-item" w="750" h="1334" par="s">1334x750</li>
+                                                <li data-text="1280x720" class="wp-item" w="720" h="1280" par="s">1280x720</li>
+                                                <li data-text="1136x640" class="wp-item" w="640" h="1136" par="s">1136x640</li>
+                                                <li data-text="960x640" class="wp-item" w="640" h="960" par="s">960x640</li>
+                                                <li data-text="960x540" class="wp-item" w="540" h="960" par="s">960x540</li>
+                                                <li data-text="854x480" class="wp-item" w="480" h="854" par="s">854x480</li>
+                                                <li data-text="800x480" class="wp-item" w="480" h="800" par="s">800x480</li>
+                                                <li data-text="480x320" class="wp-item" w="320" h="480" par="s">480x320</li>
+                                            </ul>
+                                        </li>
+                                        <li val="null" data-text="自定义" style="text-decoration: none;" par="z" isd="" class="detail-size-filter">自定义
+                                            <p class="info">宽：
+                                                <input class="default" type="text" value="1280" name="swidth" id="swidth">
+                                                <br>高：
+                                                <input class="default" type="text" value="720" name="sheight" id="sheight">
+                                                <br>
+                                                <button class="exact-size-submit" name="sizeSubmit" id="sizeSubmit">确定</button>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="topInfoBar">
+            <div id="topRS">
+                <em class="pull-rs-title">相关搜索：</em>
+                <a class="pull-rs" title="查看 宠物美容" target="_self" href="/search/index?tn=baiduimage&amp;word=宠物美容&amp;oriquery=宠物&amp;ofr=宠物">宠物美容</a>
+                <a class="pull-rs" title="查看 加菲猫宠物" target="_self" href="/search/index?tn=baiduimage&amp;word=加菲猫宠物&amp;oriquery=宠物&amp;ofr=宠物">加菲猫宠物</a>
+                <a class="pull-rs" title="查看 宠物动漫" target="_self" href="/search/index?tn=baiduimage&amp;word=宠物动漫&amp;oriquery=宠物&amp;ofr=宠物">宠物动漫</a>
+                <a class="pull-rs" title="查看 宠物蛋糕" target="_self" href="/search/index?tn=baiduimage&amp;word=宠物蛋糕&amp;oriquery=宠物&amp;ofr=宠物">宠物蛋糕</a>
+                <a class="pull-rs" title="查看 小宠物" target="_self" href="/search/index?tn=baiduimage&amp;word=小宠物&amp;oriquery=宠物&amp;ofr=宠物">小宠物</a>
+                <a class="pull-rs" title="查看 宠物小鲨鱼" target="_self" href="/search/index?tn=baiduimage&amp;word=宠物小鲨鱼&amp;oriquery=宠物&amp;ofr=宠物">宠物小鲨鱼</a>
+                <a class="pull-rs" title="查看 宠物狐狸" target="_self" href="/search/index?tn=baiduimage&amp;word=宠物狐狸&amp;oriquery=宠物&amp;ofr=宠物">宠物狐狸</a>
+                <a class="pull-rs" title="查看 宠物龟" target="_self" href="/search/index?tn=baiduimage&amp;word=宠物龟&amp;oriquery=宠物&amp;ofr=宠物">宠物龟</a>
+                <a class="pull-rs" title="查看 宠物松鼠" target="_self" href="/search/index?tn=baiduimage&amp;word=宠物松鼠&amp;oriquery=宠物&amp;ofr=宠物">宠物松鼠</a>
+                <a class="pull-rs" title="查看 宠物猫" target="_self" href="/search/index?tn=baiduimage&amp;word=宠物猫&amp;oriquery=宠物&amp;ofr=宠物">宠物猫</a>
+            </div>
+        </div>
+    </div>
+    <div id="container" class="container">
+        <div class="box">
+            <div class="content">
+                <img src="images/1.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/2.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/4.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/5.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/6.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/7.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/8.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/9.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/10.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/1.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/2.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/4.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/5.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/6.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/7.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/8.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/9.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/10.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/1.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/2.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/4.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/5.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/6.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/7.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/8.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/9.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/10.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/1.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/2.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/4.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/5.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/6.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/7.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/8.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/9.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/10.jpg">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascripts/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="javascripts/app.js"></script>
+</body>
+
+</html>

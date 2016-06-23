@@ -1,0 +1,1222 @@
+@charset "utf-8";
+
+body {
+	background-color: #fff;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+body * {
+	font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+p {
+	margin-bottom: 1.1em;
+	margin-top: 0;
+}
+#main p.lastNode {
+	margin-bottom: 0;
+}
+a:link img, a:visited img {
+	border: none;
+}
+div.clearFloat {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0px;
+}
+li.clearFloat {
+	clear: both;
+}
+ul.symbolList {
+	display: inline;
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.AbsWrap {
+	position: relative;
+	width: 100%;
+}
+.rowWrap {
+	width: 100%;
+}
+#矩形_1 {
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	margin-bottom: 0;
+	background-color: #090b07;
+	width: 1920px;
+	padding-top: 0px;
+	height: 58px;
+}
+html > body #矩形_1 {
+	height: auto;
+	min-height: 59px;
+}
+#矩形_2 {
+	left: 461px;
+	position: absolute;
+	top: 6px;
+	margin-bottom: 0;
+	background-color: #005d91;
+	width: 35px;
+	padding-top: 0px;
+	height: 10px;
+}
+html > body #矩形_2 {
+	height: auto;
+	min-height: 11px;
+}
+#矩形_22 {
+	left: 481px;
+	position: absolute;
+	top: 6px;
+	margin-bottom: 0;
+	background-color: #01a5dd;
+	width: 15px;
+	padding-top: 0px;
+	height: 24px;
+}
+html > body #矩形_22 {
+	height: auto;
+	min-height: 25px;
+}
+.Z-LIFE {
+	font-family: 'Adobe 黑体 Std R', Arial, Helvetica, sans-serif;
+	font-size: 280%;
+	text-align: center;
+	color: #01a5dd;
+	line-height: 0.04%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 517px;
+	position: absolute;
+	top: 9px;
+	margin-bottom: 0;
+}
+.首页_智能家居_案例展示_致创能源_答疑解惑_合作加盟 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 160%;
+	text-align: left;
+	color: #01a5dd;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 888px;
+	position: absolute;
+	top: 17px;
+	margin-bottom: 0;
+}
+#矩形_2_副本 {
+	left: 466px;
+	position: absolute;
+	top: 19px;
+	margin-bottom: 0;
+	background-color: #d7570f;
+	width: 15px;
+	padding-top: 0px;
+	height: 24px;
+}
+html > body #矩形_2_副本 {
+	height: auto;
+	min-height: 25px;
+}
+.智慧·节能·安全·简易 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #d7570f;
+	line-height: 0.08%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 515px;
+	position: absolute;
+	top: 31px;
+	margin-bottom: 0;
+}
+#矩形_2_副本_2 {
+	left: 466px;
+	position: absolute;
+	top: 33px;
+	margin-bottom: 0;
+	background-color: #f19300;
+	width: 35px;
+	padding-top: 0px;
+	height: 10px;
+}
+html > body #矩形_2_副本_2 {
+	height: auto;
+	min-height: 11px;
+}
+#矩形_4 {
+	left: 860px;
+	position: absolute;
+	top: 48px;
+	margin-bottom: 0;
+	background-color: #f19300;
+	width: 90px;
+	padding-top: 0px;
+	height: 10px;
+}
+html > body #矩形_4 {
+	height: auto;
+	min-height: 11px;
+}
+#矩形_3 {
+	left: 0px;
+	position: absolute;
+	top: 59px;
+	margin-bottom: 0;
+	background-color: #01a5dd;
+	width: 1920px;
+	padding-top: 0px;
+	height: 538px;
+}
+html > body #矩形_3 {
+	height: auto;
+	min-height: 539px;
+}
+.智慧电管家 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 400%;
+	text-align: center;
+	color: #fff;
+	line-height: 0.02%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 457px;
+	position: absolute;
+	top: 204px;
+	margin-bottom: 0;
+}
+#矩形_5 {
+	left: 1172px;
+	position: absolute;
+	top: 205px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 270px;
+	padding-top: 0px;
+	height: 480px;
+}
+html > body #矩形_5 {
+	height: auto;
+	min-height: 481px;
+}
+.不仅仅是智能家居，还是您身边的智慧节能大师 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 180%;
+	text-align: left;
+	color: #fff;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 459px;
+	position: absolute;
+	top: 263px;
+	margin-bottom: 0;
+}
+#矩形_3_副本 {
+	left: 0px;
+	position: absolute;
+	top: 599px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 1920px;
+	padding-top: 0px;
+	height: 539px;
+}
+html > body #矩形_3_副本 {
+	height: auto;
+	min-height: 540px;
+}
+.智能家居 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 300%;
+	font-weight: bold;
+	text-align: center;
+	color: #0a0b07;
+	line-height: 0.03%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 895px;
+	position: absolute;
+	top: 640px;
+	margin-bottom: 0;
+}
+.Smart_home {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 180%;
+	text-align: center;
+	color: #999;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 905px;
+	position: absolute;
+	top: 674px;
+	margin-bottom: 0;
+}
+.未来五年，智能家庭将形成一个亿万级的市场规模，全球智能设备数量将达近300亿_在不远未来，没有智能家居系统的住宅将会像今天不能 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: center;
+	color: #999;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 669px;
+	position: absolute;
+	top: 761px;
+	margin-bottom: 0;
+	width: 582px;
+}
+.大开眼界 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 160%;
+	text-align: left;
+	color: #0a0b07;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 780px;
+	position: absolute;
+	top: 1044px;
+	margin-bottom: 0;
+}
+.最强大脑 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 160%;
+	text-align: left;
+	color: #0a0b07;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 487px;
+	position: absolute;
+	top: 1044px;
+	margin-bottom: 0;
+}
+.安全卫士 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 160%;
+	text-align: left;
+	color: #0a0b07;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 1366px;
+	position: absolute;
+	top: 1044px;
+	margin-bottom: 0;
+}
+.智能帮手 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 160%;
+	text-align: left;
+	color: #0a0b07;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 1073px;
+	position: absolute;
+	top: 1044px;
+	margin-bottom: 0;
+}
+#矩形_3_副本2 {
+	left: 0px;
+	position: absolute;
+	top: 1139px;
+	margin-bottom: 0;
+	background-color: #000;
+	width: 1920px;
+	padding-top: 0px;
+	height: 539px;
+}
+html > body #矩形_3_副本2 {
+	height: auto;
+	min-height: 540px;
+}
+.案例展示 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 300%;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	line-height: 0.03%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 895px;
+	position: absolute;
+	top: 1180px;
+	margin-bottom: 0;
+}
+.Case_presentation {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 180%;
+	text-align: center;
+	color: #999;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 881px;
+	position: absolute;
+	top: 1214px;
+	margin-bottom: 0;
+}
+.致力于提供优质的智慧型智能家居平台_运用领域广，小区、别墅、高端楼宇等等，让科技之光遍布每一个角落 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: center;
+	color: #999;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 669px;
+	position: absolute;
+	top: 1301px;
+	margin-bottom: 0;
+	width: 582px;
+}
+#矩形_3_副本3 {
+	left: 0px;
+	position: absolute;
+	top: 1679px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 1920px;
+	padding-top: 0px;
+	height: 539px;
+}
+html > body #矩形_3_副本3 {
+	height: auto;
+	min-height: 540px;
+}
+.致创能源 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 300%;
+	font-weight: bold;
+	text-align: center;
+	color: #0a0b07;
+	line-height: 0.03%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 895px;
+	position: absolute;
+	top: 1720px;
+	margin-bottom: 0;
+}
+.Fcreate_energy {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 180%;
+	text-align: center;
+	color: #999;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 894px;
+	position: absolute;
+	top: 1754px;
+	margin-bottom: 0;
+}
+.专“致”能源管理，共“创”智慧生活_一支专致的硬件研发团队、一支创新的软件研发团队、一支积极的市场拓展团队、一支高效的企业管理 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: center;
+	color: #999;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 605px;
+	position: absolute;
+	top: 1833px;
+	margin-bottom: 0;
+	width: 710px;
+}
+#多边形_2_副本_3 {
+	left: 1339px;
+	position: absolute;
+	top: 1852px;
+	margin-bottom: 0;
+	background-color: #01a5dd;
+	width: 53px;
+	padding-top: 0px;
+	height: 96px;
+}
+html > body #多边形_2_副本_3 {
+	height: auto;
+	min-height: 97px;
+}
+#多边形_2_副本_32 {
+	left: 556px;
+	position: absolute;
+	top: 1940px;
+	margin-bottom: 0;
+	background-color: #01a5dd;
+	width: 53px;
+	padding-top: 0px;
+	height: 67px;
+}
+html > body #多边形_2_副本_32 {
+	height: auto;
+	min-height: 68px;
+}
+#多边形_2_副本_2 {
+	left: 1205px;
+	position: absolute;
+	top: 1974px;
+	margin-bottom: 0;
+	background-color: #01a5dd;
+	width: 245px;
+	padding-top: 0px;
+	height: 257px;
+}
+html > body #多边形_2_副本_2 {
+	height: auto;
+	min-height: 258px;
+}
+#多边形_2 {
+	left: 458px;
+	position: absolute;
+	top: 2006px;
+	margin-bottom: 0;
+	background-color: #01a5dd;
+	width: 213px;
+	padding-top: 0px;
+	height: 208px;
+}
+html > body #多边形_2 {
+	height: auto;
+	min-height: 209px;
+}
+#形状_1_副本_4 {
+	left: 490px;
+	position: absolute;
+	top: 2036px;
+	margin-bottom: 0;
+	background-color: #919191;
+	width: 760px;
+	padding-top: 0px;
+	height: 418px;
+}
+html > body #形状_1_副本_4 {
+	height: auto;
+	min-height: 419px;
+}
+#形状_1_副本_9 {
+	left: 14px;
+	position: absolute;
+	top: 2081px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 593px;
+	padding-top: 0px;
+	height: 373px;
+}
+html > body #形状_1_副本_9 {
+	height: auto;
+	min-height: 374px;
+}
+#多边形_2_副本 {
+	left: 540px;
+	position: absolute;
+	top: 2122px;
+	margin-bottom: 0;
+	background-color: #01a5dd;
+	width: 43px;
+	padding-top: 0px;
+	height: 59px;
+}
+html > body #多边形_2_副本 {
+	height: auto;
+	min-height: 60px;
+}
+#形状_1_副本 {
+	left: 1250px;
+	position: absolute;
+	top: 2172px;
+	margin-bottom: 0;
+	background-color: #000;
+	width: 720px;
+	padding-top: 0px;
+	height: 239px;
+}
+html > body #形状_1_副本 {
+	height: auto;
+	min-height: 240px;
+}
+#形状_1_副本_7 {
+	left: 608px;
+	position: absolute;
+	top: 2172px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 642px;
+	padding-top: 0px;
+	height: 761px;
+}
+html > body #形状_1_副本_7 {
+	height: auto;
+	min-height: 762px;
+}
+#形状_1_副本_13 {
+	left: 1420px;
+	position: absolute;
+	top: 2257px;
+	margin-bottom: 0;
+	background-color: #d4d4d4;
+	width: 555px;
+	padding-top: 0px;
+	height: 312px;
+}
+html > body #形状_1_副本_13 {
+	height: auto;
+	min-height: 313px;
+}
+#形状_1_副本_11 {
+	left: 0px;
+	position: absolute;
+	top: 2293px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 276px;
+	padding-top: 0px;
+	height: 535px;
+}
+html > body #形状_1_副本_11 {
+	height: auto;
+	min-height: 536px;
+}
+#形状_1_副本_8 {
+	left: 14px;
+	position: absolute;
+	top: 2294px;
+	margin-bottom: 0;
+	background-color: #969696;
+	width: 822px;
+	padding-top: 0px;
+	height: 639px;
+}
+html > body #形状_1_副本_8 {
+	height: auto;
+	min-height: 640px;
+}
+#形状_1_副本_6 {
+	left: 835px;
+	position: absolute;
+	top: 2413px;
+	margin-bottom: 0;
+	background-color: #636363;
+	width: 585px;
+	padding-top: 0px;
+	height: 521px;
+}
+html > body #形状_1_副本_6 {
+	height: auto;
+	min-height: 522px;
+}
+#形状_1_副本_12 {
+	left: 1420px;
+	position: absolute;
+	top: 2413px;
+	margin-bottom: 0;
+	background-color: #808080;
+	width: 518px;
+	padding-top: 0px;
+	height: 655px;
+}
+html > body #形状_1_副本_12 {
+	height: auto;
+	min-height: 656px;
+}
+#形状_1_副本_5 {
+	left: 1335px;
+	position: absolute;
+	top: 2413px;
+	margin-bottom: 0;
+	background-color: #b7b7b7;
+	width: 547px;
+	padding-top: 0px;
+	height: 655px;
+}
+html > body #形状_1_副本_5 {
+	height: auto;
+	min-height: 656px;
+}
+#形状_1_副本_10 {
+	left: 0px;
+	position: absolute;
+	top: 2458px;
+	margin-bottom: 0;
+	background-color: #9f9f9f;
+	width: 305px;
+	padding-top: 0px;
+	height: 405px;
+}
+html > body #形状_1_副本_10 {
+	height: auto;
+	min-height: 406px;
+}
+#形状_1_副本_3 {
+	left: 228px;
+	position: absolute;
+	top: 2458px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 608px;
+	padding-top: 0px;
+	height: 476px;
+}
+html > body #形状_1_副本_3 {
+	height: auto;
+	min-height: 477px;
+}
+#矩形_6 {
+	left: 960px;
+	position: absolute;
+	top: 2477px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 2px;
+	padding-top: 0px;
+	height: 398px;
+}
+html > body #矩形_6 {
+	height: auto;
+	min-height: 399px;
+}
+.而据前瞻研究院发布的《2013-2017年中国智能家居设备行业发展前景预测与投资机会分析报告》显示，到2018年，我国智能家居 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #ddd;
+	line-height: 150%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 999px;
+	position: absolute;
+	top: 2498px;
+	margin-bottom: 0;
+	width: 463px;
+}
+.厦门市致创能源技术有限公司，在今年10月份推出了新的产品线--智能电管家系列。 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #ddd;
+	line-height: 150%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 999px;
+	position: absolute;
+	top: 2642px;
+	margin-bottom: 0;
+	width: 463px;
+}
+#矩形_3_副本4 {
+	left: 0px;
+	position: absolute;
+	top: 2759px;
+	margin-bottom: 0;
+	background-color: #000;
+	width: 1920px;
+	padding-top: 0px;
+	height: 538px;
+}
+html > body #矩形_3_副本4 {
+	height: auto;
+	min-height: 539px;
+}
+.加盟合作 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 300%;
+	font-weight: bold;
+	text-align: center;
+	color: #0a0b07;
+	line-height: 0.03%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 894px;
+	position: absolute;
+	top: 2800px;
+	margin-bottom: 0;
+}
+.Joined_cooperation {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 180%;
+	text-align: center;
+	color: #999;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 876px;
+	position: absolute;
+	top: 2834px;
+	margin-bottom: 0;
+}
+#形状_1 {
+	left: 952px;
+	position: absolute;
+	top: 2875px;
+	margin-bottom: 0;
+	background-color: #f19300;
+	width: 14px;
+	padding-top: 3px;
+	height: 6px;
+}
+html > body #形状_1 {
+	height: auto;
+	min-height: 7px;
+}
+.掌握关键核心技术，代工生产_强手联合，合作共赢，共创智能家居新格局 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: center;
+	color: #999;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 669px;
+	position: absolute;
+	top: 2921px;
+	margin-bottom: 0;
+	width: 582px;
+}
+#矩形_3_副本5 {
+	left: 0px;
+	position: absolute;
+	top: 3299px;
+	margin-bottom: 0;
+	background-color: #03a3da;
+	width: 1920px;
+	padding-top: 0px;
+	height: 539px;
+}
+html > body #矩形_3_副本5 {
+	height: auto;
+	min-height: 540px;
+}
+.联系我们 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 300%;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	line-height: 0.03%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 895px;
+	position: absolute;
+	top: 3340px;
+	margin-bottom: 0;
+}
+.Contact_us {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 180%;
+	text-align: center;
+	color: #999;
+	line-height: 0.06%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 912px;
+	position: absolute;
+	top: 3374px;
+	margin-bottom: 0;
+}
+#形状_12 {
+	left: 952px;
+	position: absolute;
+	top: 3415px;
+	margin-bottom: 0;
+	background-color: #f19300;
+	width: 14px;
+	padding-top: 3px;
+	height: 6px;
+}
+html > body #形状_12 {
+	height: auto;
+	min-height: 7px;
+}
+.在一切开始之前，先说说您的需求吧 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: center;
+	color: #fff;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 669px;
+	position: absolute;
+	top: 3461px;
+	margin-bottom: 0;
+	width: 582px;
+}
+#矩形_8 {
+	left: 459px;
+	position: absolute;
+	top: 3506px;
+	margin-bottom: 0;
+	background-color: #1f67bd;
+	width: 456px;
+	padding-top: 0px;
+	height: 41px;
+}
+html > body #矩形_8 {
+	height: auto;
+	min-height: 42px;
+}
+#矩形_82 {
+	left: 1011px;
+	position: absolute;
+	top: 3506px;
+	margin-bottom: 0;
+	background-color: #1f67bd;
+	width: 42px;
+	padding-top: 0px;
+	height: 41px;
+}
+html > body #矩形_82 {
+	height: auto;
+	min-height: 42px;
+}
+.你的姓名： {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: center;
+	color: #e5e5e5;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 477px;
+	position: absolute;
+	top: 3520px;
+	margin-bottom: 0;
+}
+.地址：厦门市思明区软件园二期望海路16号之三_3楼 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #e5e5e5;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 1075px;
+	position: absolute;
+	top: 3520px;
+	margin-bottom: 0;
+}
+#矩形_83 {
+	left: 459px;
+	position: absolute;
+	top: 3549px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 456px;
+	padding-top: 0px;
+	height: 41px;
+}
+html > body #矩形_83 {
+	height: auto;
+	min-height: 42px;
+}
+.热线：400-855-0091 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #e5e5e5;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 1075px;
+	position: absolute;
+	top: 3561px;
+	margin-bottom: 0;
+}
+.你的联系电话： {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #bbb;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 477px;
+	position: absolute;
+	top: 3563px;
+	margin-bottom: 0;
+}
+#矩形_84 {
+	left: 459px;
+	position: absolute;
+	top: 3592px;
+	margin-bottom: 0;
+	background-color: #1f67bd;
+	width: 456px;
+	padding-top: 0px;
+	height: 41px;
+}
+html > body #矩形_84 {
+	height: auto;
+	min-height: 42px;
+}
+.你的邮箱： {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: center;
+	color: #e5e5e5;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 477px;
+	position: absolute;
+	top: 3605px;
+	margin-bottom: 0;
+}
+.电话：86-0592-5955168 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #e5e5e5;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 1075px;
+	position: absolute;
+	top: 3606px;
+	margin-bottom: 0;
+}
+#矩形_8_副本_3 {
+	left: 459px;
+	position: absolute;
+	top: 3635px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 456px;
+	padding-top: 0px;
+	height: 128px;
+}
+html > body #矩形_8_副本_3 {
+	height: auto;
+	min-height: 129px;
+}
+.详情需求描述： {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #e5e5e5;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 476px;
+	position: absolute;
+	top: 3647px;
+	margin-bottom: 0;
+}
+.传真：86-0592-5146486 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #e5e5e5;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 1075px;
+	position: absolute;
+	top: 3649px;
+	margin-bottom: 0;
+}
+.邮编：361000 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #e5e5e5;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 1075px;
+	position: absolute;
+	top: 3692px;
+	margin-bottom: 0;
+}
+.邮箱：salesf-createcomcn {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #e5e5e5;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 1075px;
+	position: absolute;
+	top: 3735px;
+	margin-bottom: 0;
+}
+#矩形_8_副本_4 {
+	left: 459px;
+	position: absolute;
+	top: 3766px;
+	margin-bottom: 0;
+	background-color: #fff;
+	width: 456px;
+	padding-top: 0px;
+	height: 41px;
+}
+html > body #矩形_8_副本_4 {
+	height: auto;
+	min-height: 42px;
+}
+.提交 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 160%;
+	text-align: center;
+	color: #fff;
+	line-height: 125%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 666px;
+	position: absolute;
+	top: 3776px;
+	margin-bottom: 0;
+}
+.网址：httpwwwfcreatecomcn {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #e5e5e5;
+	line-height: 166.67%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 1075px;
+	position: absolute;
+	top: 3778px;
+	margin-bottom: 0;
+}
+#矩形_7 {
+	left: 0px;
+	position: absolute;
+	top: 3840px;
+	margin-bottom: 0;
+	background-color: #090b07;
+	width: 1920px;
+	padding-top: 0px;
+	height: 39px;
+}
+html > body #矩形_7 {
+	height: auto;
+	min-height: 40px;
+}
+.©_1997-2015_厦门市致创能源技术有限公司版权所有_闽ICP备12023434号-5 {
+	font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	text-align: left;
+	color: #fff;
+	line-height: 0.08%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	left: 746px;
+	position: absolute;
+	top: 3851px;
+	margin-bottom: 0;
+}
+#viewdetail_r2_c4_r14_c1_r2_c22 {
+	left: 1112px;
+	position: absolute;
+	top: 136px;
+	height: 464px;
+	margin-bottom: 0;
+	width: 386px;
+}
+#viewdetail_r2_c4_r14_c1_r3_c4 {
+	left: 460px;
+	position: absolute;
+	top: 305px;
+	height: 40px;
+	margin-bottom: 0;
+	width: 120px;
+}
+#viewdetail_r2_c4_r14_c1_r6_c14 {
+	left: 945px;
+	position: absolute;
+	top: 704px;
+	height: 30px;
+	margin-bottom: 0;
+	width: 30px;
+}
+#viewdetail_r2_c4_r14_c1_r8_c4 {
+	left: 460px;
+	position: absolute;
+	top: 889px;
+	height: 121px;
+	margin-bottom: 0;
+	width: 120px;
+}
+#viewdetail_r2_c4_r14_c1_r8_c10 {
+	left: 753px;
+	position: absolute;
+	top: 889px;
+	height: 121px;
+	margin-bottom: 0;
+	width: 122px;
+}
+#viewdetail_r2_c4_r14_c1_r8_c18 {
+	left: 1046px;
+	position: absolute;
+	top: 889px;
+	height: 121px;
+	margin-bottom: 0;
+	width: 122px;
+}
+#viewdetail_r2_c4_r14_c1_r8_c24 {
+	left: 1339px;
+	position: absolute;
+	top: 889px;
+	height: 121px;
+	margin-bottom: 0;
+	width: 120px;
+}
+#viewdetail_r2_c4_r14_c1_r10_c14 {
+	left: 945px;
+	position: absolute;
+	top: 1244px;
+	height: 30px;
+	margin-bottom: 0;
+	width: 30px;
+}
+#viewdetail_r2_c4_r14_c1_r12_c14 {
+	left: 945px;
+	position: absolute;
+	top: 1784px;
+	height: 30px;
+	margin-bottom: 0;
+	width: 30px;
+}
+#viewdetail_r2_c4_r14_c1_r14_c1 {
+	left: 0px;
+	position: absolute;
+	top: 2220px;
+	height: 540px;
+	margin-bottom: 0;
+	width: 1459px;
+}
+#viewdetail_r2_c4_r14_c1_r16_c2 {
+	left: 412px;
+	position: absolute;
+	top: 2929px;
+	height: 313px;
+	margin-bottom: 0;
+	width: 1086px;
+}
+#viewdetail_r2_c4_r14_c1_r27_c17 {
+	left: 1011px;
+	position: absolute;
+	top: 3507px;
+	height: 301px;
+	margin-bottom: 0;
+	width: 43px;
+}

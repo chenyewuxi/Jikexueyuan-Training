@@ -1,0 +1,351 @@
+html body {
+    width: 100%;
+    height: 667px;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+.padding_0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.topnav,
+.header {
+    width: 100%;
+    background-color: #3e98f0;
+    color: #fff;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.header {
+    height: 45px;
+}
+
+.header div.baidulogrow {
+
+    height: 45px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header div.baidulogrow div {
+    float: left;
+    height: 100%;
+    background-image: url(../images/bg-new-toolbar_6e9bc53.png);
+    background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+
+.header div.baidulogrow div.baiduicon {
+    background-position: 0px 6px;
+}
+
+.header div.baidulogrow div.usericon {
+    background-position: center -463px;
+}
+
+.header div.baidulogrow div.searchicon {
+    background-position: center -162px;
+    float:right;
+}
+
+.header div.baidulogrow div.plusicon {
+    background-position: center -107px;
+    float:right;
+}
+
+
+.header div.baidulogrow div.baidulogon {
+    background-image: url(http://ns14.bdstatic.com//static/news/webapp/webappandroid/img/bg-news-logo_344ce44.png);
+    background-repeat: no-repeat;
+    background-position: center 9px;
+    background-size: 77px auto;
+    position: absolute;
+    width: 80px;
+    left: 50%;
+    margin-left: -40px;
+    z-index:1000;
+    height:40px;
+}
+
+.topnav div.row div,
+#moremenu div.row div {
+    display: block;
+    font-size: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.topnav div.row div.active {
+    text-decoration: underline;
+}
+
+#moremenu {
+    display: none;
+}
+
+#moremenu.show {
+    display: block;
+}
+
+div.row div span {
+    font-size: 10px;
+    text-align: right;
+    right: -23px;
+    position: relative;
+}
+
+div.row div b {
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    width: 1px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 12px;
+}
+
+
+#myCarousel img {
+    width:100%;
+    height:225px;
+}
+#result {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height:auto;
+    min-height:500px;
+    border: 2px solid #ccc;
+}
+
+.contentrowwrap {
+
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    display: block;
+}
+
+#result .contentrow {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 10px 10px 0;
+    margin-right: 10px;
+}
+
+#result .contentrow .contentimage {
+    float: left;
+    width: 33.3333333%;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+#result .contentrow .contentimage img {
+    width: 100%;
+    height: 100%;
+}
+
+#result .contentrow .contenttitle {
+    float: left;
+    position: relative;
+    top: -3px;
+    width: 65%;
+    height: 50px;
+    padding-left: 10px;
+    text-align: left;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+#result .contentrow .contenttitlewithoutimage {
+    float: left;
+    position: relative;
+    width: 100%;
+    top: -3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+#result .contentrow .contentwithoutimage {
+    float: left;
+    position: relative;
+    width: 100%;
+    top: -3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 11px;
+    color: #929292;
+    overflow: hidden;
+}
+
+
+#result .contentrow .contentbottom {
+    position: absolute;
+    width: 65%;
+    bottom: 5px;
+    right: 15px;
+    padding-left: 15px;
+    color: #929292;
+    text-align: left;
+    font-size: 11px;
+}
+
+#result .contentrow .contentbottomwithoutimage {
+    position: absolute;
+    width: 100% bottom: 5px;
+    bottom: 5px;
+    right: 0;
+    width: 100%;
+    padding-left: 10px;
+    color: #929292;
+    text-align: left;
+    font-size: 11px;
+    height: 17px;
+}
+
+#result .contentrow .contentbottom .timepass,
+#result .contentrow .contentbottomwithoutimage .timepass {
+    float: left;
+}
+
+#result .contentrow .contentbottom .mark,
+#result .contentrow .contentbottomwithoutimage .mark {
+    float: right;
+}
+
+#result .contentrow .contentbottom .marktop {
+    position: relative;
+    float: right;
+    display: block;
+    font-size: 11px;
+    color: #fff;
+    line-height: 15px;
+    background-color: #ff0000;
+    padding-right: 10px;
+    right: 0px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+
+.contentrow .contentbottomwithoutimage .marktop {
+    position: relative;
+    float: right;
+    display: block;
+    font-size: 11px;
+    color: blue;
+    line-height: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding-right: 10px;
+    /* right: 0px; */
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.global-tip {
+    /* display: none; */
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    height: 30px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+
+#result .contentimagerow{
+    width:100%;
+    border-bottom:1px solid #f9f9f9;
+    height:230px;
+}
+
+
+#result .contentimagerow .contentimage {
+    width:100%;
+    height:200px;
+}
+
+#result .contentimagerow .contentimage img {
+    width:100%;
+    height:200px;
+}
+
+.contentimagerow .contentbottom {
+    width: 100%;
+    float: left;
+    padding: 5px 0;
+    height: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.gotop-globalview {
+    width: 38px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .9;
+    z-index: 10;
+    right: 10px;
+    bottom: 190px;
+    position: fixed;
+    background: #7f7f7f url("../images/gotop.png") no-repeat center center;
+    -ms-background-size: 38px 40px;
+    -moz-background-size: 38px 40px;
+    -webkit-background-size: 38px 40px;
+    background-size: 38px 40px;
+    display: none;
+}
+
+.feedback-globalview {
+    width: 38px;
+    height: 40px;
+    background: #7f7f7f url("../images/feedback.png") no-repeat center center;
+     -ms-background-size: 38px 40px;
+    -moz-background-size: 38px 40px;
+    -webkit-background-size: 38px 40px;
+    background-size: 38px 40px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .9;
+    position: fixed;
+    right: 10px;
+    bottom: 140px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    z-index: 10;
+    display: none;
+}
+
+
+
+.ui-refresh {
+    height: 36px;
+    line-height: 36px;
+    background-color: #16212C;
+    text-align: center;
+    border: 1px solid #ebedef;
+    border-radius: 1px;
+    color: #545454;
+    margin: 14px 40px;
+}
