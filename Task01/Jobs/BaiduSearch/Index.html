@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="极客学院任务01">
+    <meta name="description" content="极客学院任务01-BaiduSearch">
+    <meta content="width=device-width,initial-scale=1.0,maxinum-scale=1.0,user-scalable=0;" name="viewport">
+    <title>百度一下</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/site.css">
+    <script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            
+            jQuery("#btnSearch").hover(function() {
+                jQuery("#btnSearch").addClass('btnShadow');
+            }, function() {
+                jQuery("#btnSearch").removeClass('btnShadow');
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+    <div id="divInmage" class="container80 divCenter">
+        <img src="images/bd_logo1.png" width="270" height="129">
+    </div>
+    <div id="divSearch" class="container80 divCenter">
+        <div id="divLink">
+            <span><a href="http://news.baidu.com" target="_blank">新闻</a></span>
+            <span><a href="http://news.baidu.com" target="_blank">网页</a></span>
+            <span><a href="http://tieba.baidu.com" target="_blank">贴吧</a></span>
+            <span><a href="http://zhidao.baidu.com" target="_blank">知道</a></span>
+            <span><a href="http://music.baidu.com" target="_blank">音乐</a></span>
+            <span><a href="http://image.baidu.com" target="_blank">图片</a></span>
+            <span><a href="http://v.baidu.com" target="_blank">视频</a></span>
+            <span><a href="http://map.baidu.com" target="_blank">地图</a></span>
+            <span><a href="http://baike.baidu.com" target="_blank">百科</a></span>
+            <span><a href="http://wenku.baidu.com" target="_blank">文库</a></span>
+            <span><a href="https://www.baidu.com/more" target="_blank">更多&gt;&gt;</a></span>
+            <span><label class="space100"></label></span>
+        </div>
+        <div id="divSearchContent">
+            <span><input id="txtSearch" type="text" class="search400"></input></span>
+            <span><input id="btnSearch" type="button" value="百度一下" class="searchBar"></input></span>
+        </div>
+    </div>
+</body>
+
+</html>

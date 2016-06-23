@@ -1,0 +1,183 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+
+
+.divCenter {
+	margin-left: auto;
+	margin-right: auto;
+
+	float: center;
+}
+
+.divLeft {
+
+	float:left;
+}
+
+.clearFloat {
+	clear: both;
+}
+.divRight {
+
+	float:right;
+}
+
+.divShadow {
+	box-shadow: 10px 10px 10px #888888;
+}
+
+
+.btnShadow {
+	box-shadow: 1px 1px 1px #3385ff;
+}
+
+.container50{
+	width: 50%;
+	min-width: 450px;
+}
+
+.container80{
+	width: 80%;
+	min-width: 600px;
+}
+
+.noWrap {
+	word-break: keep-all;
+    white-space: nowrap;
+}
+
+.table {
+	width: 100%;
+	border: 2px solid #ccc;
+	border-color: aqua;
+	word-wrap: break-word;
+}
+
+.table thead th.caption {
+	border: 1px solid #ccc;
+	border-color: aqua;
+	word-wrap: break-word;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	word-break: keep-all;
+    white-space: nowrap;
+}
+
+
+.table tr td.item{
+	border: 1px solid #ccc;
+	border-color: aqua;
+	word-wrap: break-word;
+	text-align: center;
+	vertical-align: middle;
+	word-break: keep-all;
+    white-space: nowrap;
+}
+
+.linkRightNav {
+	width: 80%;
+	min-width: 600px;
+	vertical-align: middle;
+	text-align: right;
+	float: right;
+	
+	
+}
+
+.linkRightNav a {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #000;
+	padding-right: 8px;
+}
+
+.textCenter {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.textRight {
+	vertical-align: middle;
+	text-align: right;
+}
+
+
+.textLeft {
+	vertical-align: middle;
+	text-align: left;
+}
+
+.searchBar {
+	width: 100px;
+	height: 28px;
+	background-color: #3385ff;
+	color: white;
+	float: left;
+	
+}
+
+.space100 {
+	width: 100px;
+}
+
+.search400 {
+	width: 400px;
+	height: 28px;
+	overflow: hidden;
+	float : left;
+}
+
+
+.search500 {
+	width: 500px;
+	height: 28px;
+	overflow: hidden;
+	float : left;
+}
+
+.contentCenter {
+	
+	margin: 80px auto;
+}
+
+
+.width50
+{
+	width: 50px;
+}
+
+.width100
+{
+	width: 100px;
+}
+
+.width200
+{
+	width: 200px;
+}
+
+.width300
+{
+	width: 300px;
+}
+
+
+.width500
+{
+	width: 500px;
+}
+
+.width600
+{
+	width: 600px;
+}
+
+div H2 {
+	text-decoration: underline;
+	font-weight: bold;
+}

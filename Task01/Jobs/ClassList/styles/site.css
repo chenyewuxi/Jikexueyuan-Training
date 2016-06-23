@@ -1,0 +1,105 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+
+
+.divCenter {
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	float: center;
+}
+
+.divLeft {
+    clear: both;
+	float:left;
+}
+
+.divRight {
+	clear: both;
+	float:right;
+}
+
+.divShadow {
+	box-shadow: 10px 10px 10px #888888;
+}
+
+
+.container50{
+	width: 50%;
+	min-width: 450px;
+}
+
+.container80{
+	width: 80%;
+	min-width: 600px;
+}
+
+.noWrap {
+	word-break: keep-all;
+    white-space: nowrap;
+}
+
+.table {
+	width: 100%;
+	border: 2px solid #ccc;
+	border-color: aqua;
+	word-wrap: break-word;
+}
+
+.table thead th.caption {
+	border: 1px solid #ccc;
+	border-color: aqua;
+	word-wrap: break-word;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	word-break: keep-all;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+
+.table tr td.item{
+	border: 1px solid #ccc;
+	border-color: aqua;
+	word-wrap: break-word;
+	text-align: center;
+	vertical-align: middle;
+	word-break: keep-all;
+    white-space: nowrap;
+}
+
+
+.textCenter {
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+
+.searchBar {
+	width: 100px;
+	height: 28px;
+	background-color: #3385ff;
+	color: white;
+	
+}
+
+.space100 {
+	width: 100px;
+}
+
+.search400 {
+	width: 400px;
+	height: 28px;
+	overflow: hidden;
+}
+
+div H2 {
+	text-decoration: underline;
+	font-weight: bold;
+}
